@@ -1,0 +1,102 @@
+/* resto welcome */
+
+.dine {
+    background-color: var(--darkblue);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+body {
+    text-align: center;
+}
+
+.hero {
+    min-height: 300px;
+    height: 762px;
+    background-image: url(../Images/resto_diningPNG.PNG) !important;
+    background-size: cover;
+    background-position: center;
+}
+/*  ===resto featured=================================== */
+
+.resto_featured {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item > img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+/* =restorant====================================== */
+
+.resto {
+    padding: 0px 50px;
+    margin: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.restaurants {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.restaurants > img {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    z-index: -999;
+    transition: 0.5s all;
+}
+
+.restaurants:hover > img {
+    transform: scale(1.2);
+}
+
+.restaurants:hover > p {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+.restaurants > p {
+    z-index: 999;
+    margin-top: -49px;
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    padding: 11px 0px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+/* 
+   */
+.newsletters_resto {
+    text-align: center;
+    border: 1px double goldenrod;
+    margin: 50px;
+    background-color: #f5f3c8;
+}
+.newsletters_resto h2 {
+    color: #867110;
+    font-size: 40px;
+}
+.newsletters_resto input {
+    border: 1px solid goldenrod;
+    width: 500px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+}
+.newsletters_resto button {
+    border: 1px solid goldenrod;
+    background-color: var(--buttonColorHover);
+    padding: 10px 60px;
+
+    transition: background-color 0.5s;
+}
+.newsletters_resto button:hover {
+    background-color: var(--buttonColorActive);
+}

@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+}
+.spa img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.spa-details {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    background-color: var(--MainBlue);
+
+    padding-inline: 50px;
+    margin-bottom: 50px;
+}
+.spa-details .container {
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+.pool img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.pool-details {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    color: #0b2447;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.pool-details .container {
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+
+.inquiry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 64px;
+}
+.form-group label {
+    display: flex;
+}
+.form-group textarea {
+    height: 155px;
+}
+.buttons-acc-setting button {
+    background-color: #f1c913;
+    width: 50%;
+}
+.deal_of_month {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.deal_of_month h1 {
+    padding-top: 10px;
+    color: var(--gold);
+}
+.deals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card_deal {
+    max-width: 585px;
+    min-height: 250px;
+    background: var(--colorCard);
+}
+.card_image_deal > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.content_card_deal {
+    width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    height: 190px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card_title {
+    color: var(--buttonColor);
+}
+.card_content {
+    color: var(--white);
+}
+.deal_btn {
+    background-color: var(--buttonColor);
+    border: 1px transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+}
+.deal_btn:hover {
+    background-color: var(--buttonColorHover);
+}

@@ -1,0 +1,590 @@
+/* ================================ HERO ============================ */
+
+.hero {
+    background-color: #07182e;
+    min-height: 300px;
+    height: 762px;
+    background-image: url(../Images/Hotel_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*  ================================ WELCOME =============================*/
+main {
+    font-family: var(--fonts);
+    background-color: var(--white);
+    text-align: center;
+}
+.welcome {
+    user-select: none;
+    background-color: var(--MainBlue);
+    text-align: center;
+}
+.welcome h1 {
+    color: var(--gold);
+}
+.welcome p {
+    color: var(--white);
+    padding-bottom: 10px;
+}
+/* ============================= DEAL OF THE MONTH ====================== */
+.deal_of_month {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.deal_of_month h1 {
+    padding-top: 10px;
+    color: var(--gold);
+}
+.deals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card_title {
+    color: var(--buttonColor);
+}
+.card_content {
+    color: var(--white);
+}
+.card_deal {
+    max-width: 585px;
+    min-height: 250px;
+    background-color: var(--colorCard);
+}
+.card_image_deal > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.content_card_deal {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    height: 190px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.deal_btn {
+    background-color: var(--buttonColor);
+    border: 1px transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+}
+.deal_btn:hover {
+    background-color: var(--buttonColorHover);
+}
+/* ======================= EXPERIENCE WITH US =========================== */
+.container_exp {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    user-select: none;
+}
+.container_exp h1 {
+    padding-top: 10px;
+    color: var(--gold);
+}
+.btn_exp {
+    background-color: var(--buttonColorHover);
+    width: 150px;
+}
+.btn_exp:hover {
+    background-color: var(--buttonColorActive);
+}
+.card_exp {
+    background-color: var(--blueHover);
+    height: 500px;
+    max-width: 600px;
+    justify-content: center;
+}
+.card_image_exp {
+    position: relative;
+    overflow: hidden;
+}
+.card_image_exp > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.card_body_exp {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.9)
+    );
+
+    padding-top: 40px;
+    transition: 0.8s;
+}
+.card_image_exp:hover > .card_body_exp,
+.card_image_exp:hover
+    > .btn_Experience
+    .card_image_exp:hover
+    > .card_body_exp
+    h3 {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.9)
+    );
+
+    padding-top: 50px;
+    padding-bottom: 40px;
+    bottom: 60px;
+}
+.card_body_exp h3 {
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: var(--white);
+}
+
+.btn_Experience {
+    bottom: -15px;
+    border-radius: 5px;
+    padding: 8px 40px;
+    background-color: var(--buttonColor);
+    transition: background-color 0.2s;
+    border-style: none;
+}
+.btn_Experience:hover {
+    background-color: var(--buttonColorHover);
+}
+
+/* ====================== WELLNESS CAMP ====================================== */
+.wellness_camp {
+    user-select: none;
+}
+.container_wellness {
+    padding: 0px 50px;
+}
+.wellness_camp h1 {
+    color: var(--gold);
+}
+.wellness_img {
+    width: 100%;
+    height: 1030px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card_well {
+    background-color: var(--blueHover);
+    height: 500px;
+    width: 100%;
+}
+.card_image_wellness {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.content_wellness {
+    /* content height of wellness */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btn-Wellness {
+    align-self: center;
+    width: 200px;
+    border-radius: 5px;
+    padding: 8px 40px;
+    background-color: var(--buttonColor);
+    transition: background-color 0.2s;
+    border-style: none;
+}
+.all_wellness {
+    position: relative;
+}
+.section_btn_wellness {
+    position: absolute;
+    bottom: 50px;
+    left: -33.2%;
+}
+
+.btn_wellness {
+    margin-top: 10px;
+    background-color: var(--buttonColorHover);
+    width: 150px;
+}
+.btn_wellness:hover {
+    background-color: var(--buttonColorActive);
+}
+
+/* ====================== REWARDS POINTS ====================================== */
+.reward_cards_section {
+    padding: 0px 20px;
+    background-color: white;
+    user-select: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.reward_card_design {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 290px 290px 290px 290px;
+    grid-template-rows: 180px;
+    justify-content: center;
+}
+.reward_card {
+    padding-left: 25px;
+    padding-right: 80px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    border-radius: 10px;
+
+    border: 1px black;
+    font-size: 15px;
+    text-align: left;
+}
+.reward_card:nth-child(1) {
+    background-color: #0b2447;
+    z-index: 1;
+    color: white;
+
+    transition: transform 0.8s;
+
+    transform: translate(60%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(133, 78, 20);
+    background: linear-gradient(
+        241deg,
+        rgba(133, 78, 20, 1) 0%,
+        rgba(0, 0, 0, 1) 58%,
+        rgba(0, 0, 0, 1) 70%,
+        rgba(76, 44, 11, 1) 100%
+    );
+}
+.reward_card:nth-child(1):hover {
+    transform: translate(60%, -20px) skew(10deg, 0deg);
+}
+.reward_card:nth-child(2) {
+    background-color: #d19e00;
+    z-index: 2;
+
+    transition: transform 0.8s;
+
+    transform: translate(20%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(250, 111, 94);
+    background: linear-gradient(
+        241deg,
+        rgb(255, 163, 151) 0%,
+        rgba(245, 181, 48, 1) 13%,
+        rgb(155, 128, 52) 28%,
+        rgb(218, 137, 49) 76%,
+        rgb(230, 199, 86) 100%
+    );
+}
+.reward_card:nth-child(2):hover {
+    transform: translate(20%, -20px) skew(10deg, 0deg);
+}
+.reward_card:nth-child(3) {
+    background-color: #f4e91d;
+    z-index: 3;
+
+    transition: transform 0.8s;
+
+    transform: translate(-20%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(46, 45, 71);
+    background: linear-gradient(
+        241deg,
+        rgba(46, 45, 71, 1) 24%,
+        rgba(42, 112, 173, 1) 68%,
+        rgba(40, 51, 239, 1) 100%,
+        rgba(9, 5, 255, 1) 100%
+    );
+}
+.reward_card:nth-child(3):hover {
+    transform: translate(-20%, -20px) skew(10deg, 0deg);
+}
+.reward_card:nth-child(4) {
+    background-color: #c1bd6d;
+    z-index: 4;
+
+    transition: transform 0.8s;
+
+    transform: translate(-60%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(255, 151, 140);
+    background: linear-gradient(
+        241deg,
+        rgba(255, 151, 140, 1) 0%,
+        rgba(226, 10, 88, 1) 42%,
+        rgba(249, 186, 143, 1) 100%,
+        rgba(255, 227, 179, 1) 100%
+    );
+}
+.reward_card:nth-child(4):hover {
+    transform: translate(-60%, -20px) skew(10deg, 0deg);
+}
+.reward_card_hover {
+    position: relative;
+    height: 50px;
+}
+.btn_rewards {
+    color: var(--black);
+    padding: 10px 20px;
+    background-color: var(--buttonColor);
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+.btn_rewards:hover {
+    color: var(--black);
+    background-color: var(--buttonColorHover);
+    text-decoration: none;
+}
+
+/* ======================RESPONSIVENESS================================ */
+
+@media (max-width: 1060px) {
+    .deal {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    .reward_card:nth-child(1) {
+        background-color: #0b2447;
+        z-index: 1;
+        color: white;
+
+        transition: transform 0.8s;
+
+        transform: translate(70%, 0px) skew(10deg, 0deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(133, 78, 20);
+        background: linear-gradient(
+            241deg,
+            rgba(133, 78, 20, 1) 0%,
+            rgba(0, 0, 0, 1) 58%,
+            rgba(0, 0, 0, 1) 70%,
+            rgba(76, 44, 11, 1) 100%
+        );
+    }
+    .reward_card:nth-child(1):hover {
+        transform: translate(70%, -20px) skew(10deg, 0deg);
+    }
+    .reward_card:nth-child(2) {
+        background-color: #d19e00;
+        z-index: 2;
+
+        transition: transform 0.8s;
+
+        transform: translate(20%, 0px) skew(10deg, 0deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(250, 111, 94);
+        background: linear-gradient(
+            241deg,
+            rgb(255, 163, 151) 0%,
+            rgba(245, 181, 48, 1) 13%,
+            rgb(155, 128, 52) 28%,
+            rgb(218, 137, 49) 76%,
+            rgb(230, 199, 86) 100%
+        );
+    }
+    .reward_card:nth-child(2):hover {
+        transform: translate(20%, -20px) skew(10deg, 0deg);
+    }
+    .reward_card:nth-child(3) {
+        background-color: #f4e91d;
+        z-index: 3;
+
+        transition: transform 0.8s;
+
+        transform: translate(-25%, 0px) skew(10deg, 0deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(46, 45, 71);
+        background: linear-gradient(
+            241deg,
+            rgba(46, 45, 71, 1) 24%,
+            rgba(42, 112, 173, 1) 68%,
+            rgba(40, 51, 239, 1) 100%,
+            rgba(9, 5, 255, 1) 100%
+        );
+    }
+    .reward_card:nth-child(3):hover {
+        transform: translate(-25%, -20px) skew(10deg, 0deg);
+    }
+    .reward_card:nth-child(4) {
+        background-color: #c1bd6d;
+        z-index: 4;
+
+        transition: transform 0.8s;
+
+        transform: translate(-70%, 0px) skew(10deg, 0deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(255, 151, 140);
+        background: linear-gradient(
+            241deg,
+            rgba(255, 151, 140, 1) 0%,
+            rgba(226, 10, 88, 1) 42%,
+            rgba(249, 186, 143, 1) 100%,
+            rgba(255, 227, 179, 1) 100%
+        );
+    }
+    .reward_card:nth-child(4):hover {
+        transform: translate(-70%, -20px) skew(10deg, 0deg);
+    }
+}
+@media (max-width: 768px) {
+    .btn_wellness {
+        margin-top: 10px;
+        background-color: var(--buttonColorHover);
+        width: 50px;
+    }
+    /* 
+    
+    */
+    .reward_card_design {
+        height: 350px;
+    }
+    .card-body {
+        padding-top: 0px;
+        bottom: -10px;
+        transition: none;
+    }
+    .card_exp:hover .card-body {
+        bottom: -10px;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+        );
+    }
+    .card_exp {
+        width: 250px;
+        height: 350px;
+    }
+    .card_exp img {
+        inline-size: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .reward_card:nth-child(1) {
+        z-index: 1;
+        color: white;
+        transition: transform 0.8s;
+
+        transform: translate(135%, 70px) rotate(70deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(133, 78, 20);
+        background: linear-gradient(
+            241deg,
+            rgba(133, 78, 20, 1) 0%,
+            rgba(0, 0, 0, 1) 58%,
+            rgba(0, 0, 0, 1) 70%,
+            rgba(76, 44, 11, 1) 100%
+        );
+    }
+    .reward_card:nth-child(1):hover {
+        transform: translate(152%, 70px);
+        z-index: 99;
+    }
+    .reward_card:nth-child(2) {
+        background-color: #d19e00;
+        z-index: 2;
+
+        transition: transform 0.8s;
+
+        transform: translate(45%, 70px) rotate(70deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(250, 111, 94);
+        background: linear-gradient(
+            241deg,
+            rgb(255, 163, 151) 0%,
+            rgba(245, 181, 48, 1) 13%,
+            rgb(155, 128, 52) 28%,
+            rgb(218, 137, 49) 76%,
+            rgb(230, 199, 86) 100%
+        );
+    }
+    .reward_card:nth-child(2):hover {
+        transform: translate(52%, 70px);
+        z-index: 99;
+    }
+    .reward_card:nth-child(3) {
+        background-color: #f4e91d;
+        z-index: 3;
+
+        transition: transform 0.8s;
+
+        transform: translate(-45%, 70px) rotate(70deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(46, 45, 71);
+        background: linear-gradient(
+            241deg,
+            rgba(46, 45, 71, 1) 24%,
+            rgba(42, 112, 173, 1) 68%,
+            rgba(40, 51, 239, 1) 100%,
+            rgba(9, 5, 255, 1) 100%
+        );
+    }
+    .reward_card:nth-child(3):hover {
+        transform: translate(-48%, 70px);
+        z-index: 99;
+    }
+    .reward_card:nth-child(4) {
+        background-color: #c1bd6d;
+        z-index: 4;
+
+        transition: transform 0.8s;
+
+        transform: translate(-135%, 70px) rotate(70deg);
+        box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+        background: rgb(255, 151, 140);
+        background: linear-gradient(
+            241deg,
+            rgba(255, 151, 140, 1) 0%,
+            rgba(226, 10, 88, 1) 42%,
+            rgba(249, 186, 143, 1) 100%,
+            rgba(255, 227, 179, 1) 100%
+        );
+    }
+    .reward_card:nth-child(4):hover {
+        transform: translate(-148%, 70px);
+        z-index: 99;
+    }
+}
+
+/* ========================== KEY FRAMS ================================= */
+@keyframes slideInLeft {
+    from {
+        transform: translatex(-100rem);
+    }
+
+    to {
+        transform: translatex(0rem);
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translatex(+100rem);
+    }
+
+    to {
+        transform: translatex(0rem);
+    }
+}

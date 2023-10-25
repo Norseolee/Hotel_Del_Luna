@@ -1,0 +1,347 @@
+body {
+    text-align: center;
+}
+
+.hero {
+    min-height: 300px;
+    height: 762px;
+    background-image: url(../Images/rewards.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* REWARD */
+
+.reward {
+    background-color: var(--MainBlue);
+    color: white;
+}
+
+.reward_cards_section {
+    padding: 0px 20px;
+    background-color: white;
+    user-select: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.reward_cards_section h1 {
+    color: var(--gold);
+}
+.reward_card_design {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 290px 290px 290px 290px;
+    grid-template-rows: 180px;
+    justify-content: center;
+}
+.reward_card {
+    padding-left: 25px;
+    padding-right: 80px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+
+    border-radius: 10px;
+
+    border: 1px black;
+    font-size: 15px;
+    text-align: left;
+}
+.reward_card:nth-child(1) {
+    background-color: #0b2447;
+    z-index: 1;
+    color: white;
+
+    transition: transform 0.8s;
+
+    transform: translate(60%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(133, 78, 20);
+    background: linear-gradient(
+        241deg,
+        rgba(133, 78, 20, 1) 0%,
+        rgba(0, 0, 0, 1) 58%,
+        rgba(0, 0, 0, 1) 70%,
+        rgba(76, 44, 11, 1) 100%
+    );
+}
+.reward_card:nth-child(1):hover {
+    transform: translate(60%, -20px) skew(10deg, 0deg);
+}
+.reward_card:nth-child(2) {
+    background-color: #d19e00;
+    z-index: 2;
+
+    transition: transform 0.8s;
+
+    transform: translate(20%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(250, 111, 94);
+    background: linear-gradient(
+        241deg,
+        rgb(255, 163, 151) 0%,
+        rgba(245, 181, 48, 1) 13%,
+        rgb(155, 128, 52) 28%,
+        rgb(218, 137, 49) 76%,
+        rgb(230, 199, 86) 100%
+    );
+}
+.reward_card:nth-child(2):hover {
+    transform: translate(20%, -20px) skew(10deg, 0deg);
+}
+.reward_card:nth-child(3) {
+    background-color: #f4e91d;
+    z-index: 3;
+
+    transition: transform 0.8s;
+
+    transform: translate(-20%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(46, 45, 71);
+    background: linear-gradient(
+        241deg,
+        rgba(46, 45, 71, 1) 24%,
+        rgba(42, 112, 173, 1) 68%,
+        rgba(40, 51, 239, 1) 100%,
+        rgba(9, 5, 255, 1) 100%
+    );
+}
+.reward_card:nth-child(3):hover {
+    transform: translate(-20%, -20px) skew(10deg, 0deg);
+}
+.reward_card:nth-child(4) {
+    background-color: #c1bd6d;
+    z-index: 4;
+
+    transition: transform 0.8s;
+
+    transform: translate(-60%, 0px) skew(10deg, 0deg);
+    box-shadow: -11px 11px 16px 0px rgba(0, 0, 0, 0.3);
+    background: rgb(255, 151, 140);
+    background: linear-gradient(
+        241deg,
+        rgba(255, 151, 140, 1) 0%,
+        rgba(226, 10, 88, 1) 42%,
+        rgba(249, 186, 143, 1) 100%,
+        rgba(255, 227, 179, 1) 100%
+    );
+}
+.reward_card:nth-child(4):hover {
+    transform: translate(-60%, -20px) skew(10deg, 0deg);
+}
+.reward_card_hover {
+    position: relative;
+    height: 50px;
+}
+.btn_rewards {
+    color: var(--black);
+    padding: 10px 20px;
+    background-color: var(--buttonColor);
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+.btn_rewards:hover {
+    color: var(--black);
+    background-color: var(--buttonColorHover);
+    text-decoration: none;
+}
+/* ==========rewards sign up===================================================== */
+.Table-Content {
+    margin-inline: 50px;
+}
+td,
+th {
+    border: 1px solid lightgray;
+}
+.reward_card_front_1,
+.reward_card_front_2,
+.reward_card_front_3,
+.reward_card_front_4 {
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    border-radius: 10px;
+
+    border: 1px black;
+    font-size: 15px;
+    text-align: left;
+}
+
+.reward_card_front_1 {
+    color: white;
+
+    background: rgb(133, 78, 20);
+    background: linear-gradient(
+        241deg,
+        rgba(133, 78, 20, 1) 0%,
+        rgba(0, 0, 0, 1) 58%,
+        rgba(0, 0, 0, 1) 70%,
+        rgba(76, 44, 11, 1) 100%
+    );
+}
+
+.reward_card_front_2 {
+    background: rgb(250, 111, 94);
+    background: linear-gradient(
+        241deg,
+        rgb(255, 163, 151) 0%,
+        rgba(245, 181, 48, 1) 13%,
+        rgb(155, 128, 52) 28%,
+        rgb(218, 137, 49) 76%,
+        rgb(230, 199, 86) 100%
+    );
+}
+
+.reward_card_front_3 {
+    background: rgb(46, 45, 71);
+    background: linear-gradient(
+        241deg,
+        rgba(46, 45, 71, 1) 24%,
+        rgba(42, 112, 173, 1) 68%,
+        rgba(40, 51, 239, 1) 100%,
+        rgba(9, 5, 255, 1) 100%
+    );
+}
+
+.reward_card_front_4 {
+    background: rgb(255, 151, 140);
+    background: linear-gradient(
+        241deg,
+        rgba(255, 151, 140, 1) 0%,
+        rgba(226, 10, 88, 1) 42%,
+        rgba(249, 186, 143, 1) 100%,
+        rgba(255, 227, 179, 1) 100%
+    );
+}
+ul li {
+    text-align: start !important;
+}
+ul {
+    padding-top: 20px;
+}
+
+/* footer ======================================== */
+.terms {
+    padding-top: 15px;
+    font-size: medium;
+    margin-top: 50px;
+    border-top: 1px solid whitesmoke;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.terms li:hover {
+    text-decoration: underline;
+}
+.Bottom p {
+    margin-top: 10px;
+    color: #bcbbbb;
+    text-align: center;
+    font-size: small;
+}
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    background: #0b2447;
+    padding: 20px 0;
+}
+.single-box p {
+    color: #fff;
+}
+.single-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.single-box .card-area i {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.single-box ul {
+    list-style: none;
+    padding: 0;
+}
+.single-box ul li a {
+    text-decoration: none;
+    color: #fff;
+
+    font-weight: 100;
+}
+.single-box a:hover {
+    color: #a5d7e8;
+}
+.socials i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.socials a:hover {
+    color: #a5d7e8;
+}
+.socials a {
+    color: #f6f6f6;
+}
+.single-box h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+#basic-addon2 {
+    background: #fe1e4f;
+    color: #fff;
+}
+.socials i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.input-group {
+    position: relative;
+}
+.input-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* joinnn member ship=========================== */
+.join_membership {
+    border: 1px double goldenrod;
+    padding: 30px 60px;
+    margin: 50px;
+    background-color: #f5f3c8;
+}
+.join_membership h2 {
+    color: #867110;
+    font-size: 40px;
+}
+.join_membership h3 {
+    border: 1px solid goldenrod;
+    background-color: var(--buttonColorHover);
+    padding: 10px 60px;
+    margin: 20px;
+
+    transition: background-color 0.5s;
+}
+.join_membership h3:hover {
+    background-color: var(--buttonColorActive);
+}
+.join_membership a,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+}

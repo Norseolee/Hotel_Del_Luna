@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class Homepage extends Controller
+{
+    public function Home() {
+        return view('Homepage');    
+    }
+    public function About(){
+        return view('HTML.About');
+    }
+    public function Reward(){
+        return view('HTML.Reward');
+    }
+    public function Account(){
+        return view('HTML.Account');
+    }
+    public function Dining(){
+        return view('HTML.Dining');
+    }
+    public function Entertainment(){
+        return view('HTML.Entertaiment');
+    }
+    public function Gym(){
+        return view('HTML.Gym');
+    }
+    public function Meeting_Events(){
+        return view('HTML.Meeting_Events');
+    }
+    public function Room(){
+        return view('HTML.Rooms');
+    }
+    public function Shooting(){
+        return view('HTML.Shooting');
+    }
+    public function Spa(){
+        return view('HTML.Spa');
+    }
+    public function Swimmingpool(){
+        return view('HTML.Swimmingpool');
+    }
+    public function Career() {
+        return view('HTML.Career');
+    }
+
+    public function Wellness(){
+        return view('HTML.Wellness');
+    }
+}
