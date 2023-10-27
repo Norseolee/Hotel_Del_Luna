@@ -194,6 +194,11 @@ body {
 body {
     user-select: none;
 }
+
+.font_color {
+    color: var(--buttonColorHover);
+}
+
 .hero {
     background-image: url(../Images/room.jpg) !important;
     background-size: cover;
@@ -208,7 +213,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--MainBlue);
-    width: 130vh;
+    width: 80%;
 
     margin-top: -100px;
     margin-inline: auto;
@@ -239,18 +244,25 @@ body {
 .room {
     padding: 30px 20px;
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.room > * {
+    flex-grow: 1;
 }
 
 .Tab-button-active {
-    background-color: var(--buttonColorHover);
+    background-color: var(--buttonColor);
     color: black;
 }
 
 .select_room div > input {
     width: 150px;
-    margin-top: -10px;
-    padding: 5px 10px;
-    border: px solid var(--blueHover);
+    height: 50px;
+    padding-left: 10px;
+    border: 2px solid var(--blueHover);
     border-radius: 4px;
     color: var(--blueHover);
 }
@@ -261,7 +273,65 @@ body {
 
 .select_room div > * {
     display: flex;
+    column-gap: 20px;
 }
+
 .Tab-content-active {
     display: block;
+}
+
+.btn {
+    background-color: var(--buttonColor);
+    border: 1px transparent;
+    border-radius: 5px;
+    padding: 10px 40px;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--buttonColorHover);
+}
+
+.availablity_btn {
+    display: flex;
+    background-color: pink;
+    justify-content: stretch;
+}
+
+.availablity {
+    border: none;
+    background-color: var(--buttonColor);
+    border: 1px transparent;
+    border-radius: 5px;
+    padding-block: 20px;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+.availablity:hover {
+    background-color: var(--buttonColorHover);
+}
+.availablity:focus {
+    outline: none;
+}
+
+.intro_room_suite {
+    margin-inline: 200px;
+}
+
+.intro_room_suite h1 {
+    color: var(--buttonColorHover);
+}
+
+.Room_Suite_City {
+    margin-block: 50px;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
