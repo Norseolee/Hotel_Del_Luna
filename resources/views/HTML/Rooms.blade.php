@@ -27,12 +27,12 @@
                 <div data-tab="city_view" class="select_room">
                     <div class="room">
                         <div>
-                            <label for="check-in">Check-in:</label>
-                            <input id="datePicker" type="date" id="check-in" name="check-in" />
+                            <label>Check-in:</label>
+                            <input class="datePicker" type="date" />
                         </div>
                         <div>
                             <label>Check-out:</label>
-                            <input id="datePicker" type="date" placeholder="Check-out-Date" />
+                            <input class="datePicker" type="date" />
                         </div>
                         <div>
                             <label>Guest</label>
@@ -50,11 +50,11 @@
                     <div class="room">
                         <div>
                             <label>Check-in:</label>
-                            <input type="date" placeholder="Check-in-Date" />
+                            <input class="datePicker" type="date" placeholder="Check-in-Date" />
                         </div>
                         <div>
                             <label>Check-out:</label>
-                            <input type="date" placeholder="Check-out-Date" />
+                            <input class="datePicker" type="date" placeholder="Check-out-Date" />
                         </div>
                         <div>
                             <label>Adults:</label>
@@ -98,7 +98,7 @@
             <div class="card" style="width: 18rem">
                 <img class="card-img-top" src="../images/hotelbed1.png" alt="Card image cap" />
                 <div class="card-body">
-                    <h5 class="card-title">Double Room</h5>
+                    <h5 class="card-title font_color">Double Room</h5>
                     <p>$129 | <span id="price">per night</span></p>
                     <p class="card-text">
                         <i> "Twice the Comfort, Double the Relaxation."</i>
@@ -144,7 +144,7 @@
             <div class="card" style="width: 18rem">
                 <img class="card-img-top" src="../images/hotelbed2.png" alt="Card image cap" />
                 <div class="card-body">
-                    <h5 class="card-title">Queen Bed Room</h5>
+                    <h5 class="card-title font_color">Queen Bed Room</h5>
                     <p>$129 | <span id="price">per night</span></p>
                     <p class="card-text">
                         <i> "Experience Regal Comfort in a Queen-Sized Haven."</i>
@@ -181,7 +181,7 @@
             <div class="card" style="width: 18rem">
                 <img class="card-img-top" src="../images/hotelbed3.png" alt="Card image cap" />
                 <div class="card-body">
-                    <h5 class="card-title">King Bed Room</h5>
+                    <h5 class="card-title font_color">King Bed Room</h5>
                     <p>$129 | <span id="price">per night</span></p>
                     <p class="card-text">
                         <i> "Luxuriate in Royal Opulence in a King-Sized Retreat."</i>

@@ -3,7 +3,7 @@
 
 <head>
     @include('Layout.Head')
-    <link rel="stylesheet" href="Gym.css">
+    <link rel="stylesheet" href="{{ asset('Css/Gym.css')}}">
 </head>
 
 <body>

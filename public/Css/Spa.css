@@ -1,0 +1,79 @@
+.images {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.spa-details {
+    text-align: center;
+    color: white;
+
+    padding: 30px 20px;
+    background-color: var(--colorCard);
+}
+.spa-details h1 {
+    color: var(--gold);
+}
+.time {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+
+    padding-block: 20px;
+}
+
+.inquiry {
+    background-color: var(--white);
+    padding: 30px;
+}
+.inquiry h2 {
+    color: var(--gold);
+}
+.inquiry h2,
+p {
+    text-align: center;
+}
+.form-group {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.form-group div {
+    display: flex;
+    flex-direction: column;
+}
+.form-group .date {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.date div {
+    width: 100%;
+    column-gap: 30px;
+}
+.button-sent {
+    margin-block: 20px;
+    width: 100%;
+}
+.control {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid var(--colorCard);
+
+    padding: 10px 12px;
+
+    transition: border-bottom 0.5s;
+}
+.label {
+    margin-block: 10px;
+}
+.control:focus {
+    border: none;
+    border-bottom: 2px solid var(--gold);
+    outline: none;
+}
+.textarea {
+    resize: none;
+}

@@ -30,14 +30,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const datePicker = document.getElementById("datePicker");
+const datePicker = document.querySelectorAll(".datePicker");
 
 const currentDate = new Date().toISOString().split("T")[0];
 
-datePicker.setAttribute("min", currentDate);
+datePicker.forEach(function (datePicker) {
+    datePicker.setAttribute("min", currentDate);
 
-datePicker.addEventListener("input", function () {
-    if (this.value < currentDate) {
-        this.value = currentDate;
-    }
+    datePicker.addEventListener("input", function () {
+        if (this.value < currentDate) {
+            this.value = currentDate;
+        }
+    });
 });

@@ -11,10 +11,10 @@
     <div class="hero" data-aos="fade-down" data-aos-duration="1000"></div>
 
     <main>
-        <div class="spa">
-            <img class="images" src="{{ asset('Images/event-background.jpg')}}" alt="" />
+        <div class="meeting">
+            <img class="images" src="{{ asset('Images/event-background.jpg')}}" alt="Event background" />
         </div>
-        <div class="spa-details">
+        <div class="meeting-details">
             <h1>Venues</h1>
             <p>
                 All function room spaces at Hotel Del Luna feature state-of-the-art

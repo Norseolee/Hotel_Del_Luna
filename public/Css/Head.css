@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "New York";
-    src: url(../fonts/newyork/NewYork\ PERSONAL\ USE.otf);
-}
-
 :root {
     --spacer: 1rem;
     --bigspace: 2rem;
@@ -11,7 +6,7 @@
     --MainBlue: #1c2e4a;
     --darkblue: #0b2447;
     --gold: rgb(231, 212, 103);
-    --white: #f3f3f3;
+    --white: #eeeeee;
     --black: #202020;
 
     --blueHover: #2b4875;
