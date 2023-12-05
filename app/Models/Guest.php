@@ -1,28 +1,40 @@
 <?php
 
+/**
+ * Created by Reliese Model.
+ */
+
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Guest
+ * 
+ * @property int $guest_id
+ * @property string $first_name
+ * @property string $last_name
+ * @property string $email
+ * @property string $password
+ * @property string|null $address
+ *
+ * @package App\Models
+ */
 class Guest extends Model
 {
-    use HasFactory;
+	protected $table = 'guests';
+	protected $primaryKey = 'guest_id';
+	public $timestamps = false;
 
-    protected $primaryKey = 'guest_id';
+	protected $hidden = [
+		'password'
+	];
 
-    public function invoice_guests()
-    {
-        return $this->hasMany(Invoice_guest::class);
-    }
-
-    public function reserved_room()
-    {
-        return $this->hasMany(Reserved_room::class);
-    }
-
-    public function reservation()
-    {
-        return $this->belongsTo(Reservation::class);
-    }
+	protected $fillable = [
+		'first_name',
+		'last_name',
+		'email',
+		'password',
+		'address'
+	];
 }

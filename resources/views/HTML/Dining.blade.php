@@ -53,8 +53,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('Images/dining_2.PNG')}}" class="d-block w-100"
-                            alt="child and father swimming in the pool" />
+                        <img src="{{ asset('Images/dining_2.PNG')}}" class="d-block w-100" alt="child and father swimming in the pool" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>CUT</h5>
                             <h5>WESTERN | FINE DINING</h5>
@@ -86,54 +85,21 @@
         </div>
         <!-- RESTO -->
         <div class="resto" data-aos="slide-left" data-aos-duration="800">
-            <a href="dining/koma.html">
+            @foreach ($restaurant as $r)
+            <a href="/Dining/{{$r->restaurant_id}}">
                 <div class="restaurants">
-                    <img src="{{ asset('Images/dining_1.PNG')}}" />
-                    <p>KOMA</p>
+                    <div class="restaurant-image">
+                        <img class="resto-image" src="{{ asset('Images/dining/' . $r->picture) }}" />
+                    </div>
+                    <div class="restaurant-info">
+                        <p class="resto-name">{{ $r->restaurant_name }}</p>
+                        <p>{{ $r->restaurant_type }}</p>
+                    </div>
+
                 </div>
             </a>
-            <a href="dining/bubbly_lounge.html">
-                <div class="restaurants">
-                    <img src="{{ asset('Images/dining_4.png')}}" />
-                    <p>BUBBLY LOUNGE</p>
-                </div>
-            </a>
-            <a href="dining/red_spice.html">
-                <div class="restaurants">
-                    <img src="{{ asset('Images/dining_5.png')}}" />
-                    <p>RED SPICE</p>
-                </div>
-            </a>
-            <a href="dining/japanese_kappou.html">
-                <div class="restaurants">
-                    <img src="{{ asset('Images/dining_6.png')}}" />
-                    <p>JAPANESE KAPPOU</p>
-                </div>
-            </a>
-            <a href="dining/ginza_nagaoka.html">
-                <div class="restaurants">
-                    <img src="{{ asset('Images/dining_7.png')}}" />
-                    <p>GINZA NAGAOKA</p>
-                </div>
-            </a>
-            <a href="dining/yu_lei.html">
-                <div class="restaurants">
-                    <img src="{{ asset('Images/dining_8.png')}}" />
-                    <p>YU LEI</p>
-                </div>
-            </a>
-            <a href="dining/chairman_lounge.html">
-                <div class="restaurants">
-                    <img src="{{ asset('Images/dining_9.png')}}" />
-                    <p>CHAIRMAN'S LOUNGE</p>
-                </div>
-            </a>
-            <a href="dining/executive_lounge.html">
-                <div class="restaurants">
-                    <img src="{{ asset('Images/dining_10.png')}}" />
-                    <p>EXECUTIVE LOUNGE</p>
-                </div>
-            </a>
+            @endforeach
+
         </div>
 
         <div class="chef"></div>

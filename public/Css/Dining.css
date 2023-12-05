@@ -41,29 +41,74 @@ body {
     justify-content: center;
     overflow: hidden;
 }
+.resto a {
+    text-decoration: none;
+}
 
-.restaurants {
+.restaurant-image {
     width: 400px;
     height: 350px;
     overflow: hidden;
 }
-
-.restaurants > img {
+.resto-image {
     position: relative;
     width: 400px;
     height: 350px;
     z-index: -999;
     transition: 0.5s all;
+    object-fit: cover;
+}
+.restaurant-image:hover .resto-image {
+    transform: scale(1.2);
+}
+.restaurant-info {
+    width: 400px;
+    height: 100px;
+}
+.restaurant-info p {
+    margin: 0;
+    color: var(--buttonColorActive);
+}
+.resto-name {
+    font-size: 25px;
+}
+/* 
+.resto {
+    padding: 0px 50px;
+    margin: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.restaurants:hover > img {
+.resto a {
+    text-decoration: none;
+}
+
+.restaurant-image {
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.resto-image {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    z-index: -999;
+    transition: 0.5s all;
+    object-fit: cover;
+}
+.resto-image:hover {
     transform: scale(1.2);
 }
 
-.restaurants:hover > p {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
-}
-.restaurants > p {
+.restaurant-info > p {
+    opacity: 0;
+    transition: opacity 0.8s;
+
     z-index: 999;
     margin-top: -49px;
     color: white;
@@ -72,6 +117,10 @@ body {
     padding: 11px 0px;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
+.restaurant-info:hover > p {
+    opacity: 1;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+} */
 /* 
    */
 .newsletters_resto {

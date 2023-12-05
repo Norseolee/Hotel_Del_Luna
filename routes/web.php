@@ -9,6 +9,7 @@ Route::get('/About', [Homepage::class, 'About']);
 Route::get('/Rewards', [Homepage::class, 'Reward']);
 Route::get('/Account', [Homepage::class, 'Account']);
 Route::get('/Dining', [Homepage::class, 'Dining']);
+Route::get('/Dining/{restaurant_id}', [Homepage::class, 'ShowResto']);
 Route::get('/Entertainment', [Homepage::class, 'Entertainment']);
 Route::get('/Gym', [Homepage::class, 'Gym']);
 Route::get('/Meeting_Events', [Homepage::class, 'Meeting_Events']);
