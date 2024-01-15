@@ -12,7 +12,7 @@
 
     <main>
         <div class="meeting">
-            <img class="images" src="{{ asset('Images/event-background.jpg')}}" alt="Event background" />
+            <img class="images" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313939/event-background_okyjf0.jpg" alt="Event background" />
         </div>
         <div class="meeting-details">
             <h1>Venues</h1>
@@ -29,7 +29,7 @@
                 <div class="deals">
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="{{ asset('Images/event-card.jpg')}}" alt="family in a spa message" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313939/event-card_erqgsu.jpg" alt="family in a spa message" />
                             <div class="content_card_deal">
                                 <div class="card_title">
                                     <h3>Events at the Poolside</h3>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="{{asset('Images/theatre-card.jpeg')}}"
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313979/theatre-card_f50uf9.jpg"
                                 alt="child and father swimming in the pool" />
                         </div>
                         <div class="content_card_deal">
@@ -68,7 +68,7 @@
                     </div>
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="{{ asset('Images/forums-card.jpeg')}}" alt="family swimming in the pool" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313943/forums-card_jimkqc.jpg" alt="family swimming in the pool" />
                         </div>
                         <div class="content_card_deal">
                             <div class="card_title">

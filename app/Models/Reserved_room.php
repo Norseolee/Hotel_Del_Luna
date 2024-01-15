@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Reserved_room extends Model
 {
     use HasFactory;
-    protected $primaryKey = "reserved_room_id"
+    protected $primaryKey = "reserved_room_id";
 
     public function reservation()
     {

@@ -3,44 +3,35 @@
 
 <head>
     @include('Layout.Head')
-    <link rel="stylesheet" href="SignIn_SignUp.css">
+    <link rel="stylesheet" href="{{ asset('Css/Signin_Signup.css') }}">
 </head>
 
 <body>
-    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="errorModalLabel">Error</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p id="errorModalMessage"></p>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('Messages')
+
     <div class="container">
-        <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i></a>
+        <a href="{{ route('Home') }}" class="back-button"><i class="fas fa-arrow-left"></i></a>
+
 
         <div class="signin-signup" id="sign-in-form">
-            <form onsubmit="validateLogin()" class="sign-in-form">
+            <form action="{{ route('sign-in') }}" onsubmit="validateLogin()" class="sign-in-form" method="POST">
+                @csrf
                 <h2 class="title">Sign in</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="email" placeholder="Enter your email address" id="login-email" />
+                    <input type="email" placeholder="Enter your email address" id="login-email" name="login-email" />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Enter your password" id="login-pass" />
+                    <input type="password" placeholder="Enter your password" id="login-pass" name="login-pass" />
                     <i class="fas fa-eye toggle-password" id="togglePassword1"></i>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="remember" />
+                    <input class="form-check-input" type="checkbox" id="remember" name="remember" />
                     <label class="form-check-label" for="remember"> Remember me </label>
                 </div>
-                <input type="submit" value="Login" class="btn" />
-                <p class="social-text text-center">Or Sign in with social platform</p>
+                <button type="submit" class="btn">Login</button>
+                <p class="social-text text-center">Or Sign in with a social platform</p>
                 <div class="social-media">
                     <a href="#" class="social-icons"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
@@ -51,32 +42,34 @@
                     Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a>
                 </p>
             </form>
-            <form class="sign-up-form" id="sign-up-form" onsubmit="addAccount()">
+            <form action="{{ route('create-account') }}" class="sign-up-form" id="sign-up-form" onsubmit="addAccount()"
+                method="POST">
+                @csrf
                 <h2 class="title">Sign up</h2>
                 <div class="input-field">
                     <i class="fas fa-user" for="fname"></i>
-                    <input type="text" placeholder="First Name" id="fname" required />
+                    <input type="text" placeholder="First Name" id="fname" name="fname" required />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-user" for="lname"></i>
-                    <input type="text" placeholder="Last Name" id="lname" required />
+                    <input type="text" placeholder="Last Name" id="lname" name="lname" required />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope" for="email"></i>
-                    <input type="email" placeholder="Email" id="email" required />
+                    <input type="email" placeholder="Email" id="email" name="email" required />
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock" for="pass"></i>
-                    <input type="password" placeholder="Password" id="pass" required />
+                    <input type="password" placeholder="Password" id="pass" name="pass" required />
                     <i class="fas fa-eye toggle-password" id="togglePassword2"></i>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock" for="c_pass"></i>
-                    <input type="password" placeholder="Confirm Password" id="c_pass" required />
+                    <input type="password" placeholder="Confirm Password" id="c_pass" name="c_pass" required />
                     <i class="fas fa-eye toggle-password" id="togglePassword3"></i>
                 </div>
-                <input type="submit" value="SignUp" class="btn" />
-                <p class="social-text text-center">Or Sign up with social platform</p>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="social-text text-center">Or Sign up with a social platform</p>
                 <div class="social-media">
                     <a href="#" class="social-icons"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
@@ -99,7 +92,7 @@
                     </p>
                     <button class="btn" id="sign-in-btn">Sign in</button>
                 </div>
-                <img src="../images/hotel_logo.png" alt="" class="image pt-4" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313955/hotel_logo_neveax.png" alt="" class="image pt-4" />
             </div>
             <div class="panel right-panel">
                 <div class="content">
@@ -111,15 +104,90 @@
                     </p>
                     <button class="btn" id="sign-up-btn">Sign up</button>
                 </div>
-                <img src="../images/hotel_logo.png" alt="" class="image pt-4" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313955/hotel_logo_neveax.png" alt="" class="image pt-4" />
             </div>
         </div>
     </div>
-    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=YOUR_APP_ID&autoLogAppEvents=1">
-    </script>
-    <script src="../JS/login.js"></script>
 
-    @include('Layout.Footer')
 </body>
 
 </html>
+
+<script>
+    function checkLogin() {
+  if (localStorage.getItem("login") != null) {
+    $("#login-nav-item").text("Account");
+    document.getElementById("login-nav-item").href = "HTML/account.html";
+    $("#loginStatus").text("Account");
+    document.getElementById("login-nav-item").href = "HTML/account.html";
+  } else if (sessionStorage.getItem("login") != null) {
+    $("#login-nav-item").text("Account");
+    document.getElementById("login-nav-item").href = "HTML/account.html";
+    $("#loginStatus").text("Account");
+    document.getElementById("login-nav-item").href = "HTML/account.html";
+  }
+}
+checkLogin();
+
+var passwordField = document.getElementById("login-pass");
+var togglePassword = document.getElementById("togglePassword1");
+
+togglePassword.addEventListener("click", function () {
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    togglePassword.classList.remove("fa-eye");
+    togglePassword.classList.add("fa-eye-slash");
+  } else {
+    passwordField.type = "password";
+    togglePassword.classList.remove("fa-eye-slash");
+    togglePassword.classList.add("fa-eye");
+  }
+});
+
+var passwordField1 = document.getElementById("pass");
+var togglePassword1 = document.getElementById("togglePassword2");
+
+var passwordField2 = document.getElementById("c_pass");
+var togglePassword2 = document.getElementById("togglePassword3");
+
+togglePassword1.addEventListener("click", function () {
+  togglePasswordVisibility(passwordField1, togglePassword1);
+});
+
+togglePassword2.addEventListener("click", function () {
+  togglePasswordVisibility(passwordField2, togglePassword2);
+});
+
+function togglePasswordVisibility(passwordField, togglePassword) {
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    togglePassword.classList.remove("fa-eye");
+    togglePassword.classList.add("fa-eye-slash");
+  } else {
+    passwordField.type = "password";
+    togglePassword.classList.remove("fa-eye-slash");
+    togglePassword.classList.add("fa-eye");
+  }
+}
+
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
+const sign_in_btn2 = document.querySelector("#sign-in-btn2");
+const sign_up_btn2 = document.querySelector("#sign-up-btn2");
+
+sign_up_btn.addEventListener("click", () => {
+  container.classList.add("sign-up-mode");
+});
+sign_in_btn.addEventListener("click", () => {
+  container.classList.remove("sign-up-mode");
+});
+
+sign_up_btn2.addEventListener("click", () => {
+  container.classList.add("sign-up-mode2");
+});
+sign_in_btn2.addEventListener("click", () => {
+  container.classList.remove("sign-up-mode2");
+});
+
+</script>

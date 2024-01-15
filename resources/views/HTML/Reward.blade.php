@@ -36,19 +36,19 @@
 
             <div class="reward_card_design" data-aos="zoom-in" data-aos-duration="1000">
                 <p class="reward_card">
-                    <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />123 456 7890
                 </p>
                 <p class="reward_card">
-                    <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />975 310 4826
                 </p>
                 <p class="reward_card">
-                    <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />624 578 1930
                 </p>
                 <p class="reward_card">
-                    <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />408 729 5613
                 </p>
             </div>
@@ -91,7 +91,7 @@
                     <td>Luna Star Card</td>
                     <td>
                         <p class="reward_card_front_4">
-                            <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                            <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                             <br />408 729 5613
                         </p>
                     </td>
@@ -110,7 +110,7 @@
                     <td>Moonlight Elite Card</td>
                     <td>
                         <p class="reward_card_front_3">
-                            <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                            <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                             <br />408 729 5613
                         </p>
                     </td>
@@ -129,7 +129,7 @@
                     <td>Celestial Platinum Card</td>
                     <td>
                         <p class="reward_card_front_2">
-                            <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                            <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                             <br />408 729 5613
                         </p>
                     </td>
@@ -154,7 +154,7 @@
                     <td>Eclipsia Diamond Card</td>
                     <td>
                         <p class="reward_card_front_1">
-                            <i><img src="{{ asset('Images/favicon.ico')}}" /></i>
+                            <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                             <br />408 729 5613
                         </p>
                     </td>

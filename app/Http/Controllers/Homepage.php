@@ -2,12 +2,74 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Guest;
 use App\Models\Restaurant;
 use App\Models\RestaurantGallary;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
+
 
 class Homepage extends Controller
 {
+
+    public function __construct()
+    {
+        view()->share('authUser', Auth::user());
+    }
+
+    public function SignIn_SignUp()
+    {
+        return view('HTML.Signin_Signup');
+    }
+
+    public function createAccount(Request $request)
+    {
+        $request->validate([
+            'fname' => 'required',
+            'lname' => 'required',
+            'email' => 'required|email|unique:guests',
+            'pass' => 'required|min:6',
+        ]);
+        $user = new Guest([
+            'first_name' => $request->input('fname'),
+            'last_name' => $request->input('lname'),
+            'email' => $request->input('email'),
+            'password' => Hash::make($request->input('pass')),
+        ]);
+        $user->save();
+        return redirect()->back()->with('success', 'Account created successfully.');
+    }
+
+    public function signIn(Request $request)
+    {
+        $request->validate([
+            'login-email' => 'required|email',
+            'login-pass' => 'required',
+        ]);
+
+        $user = Guest::where('email', $request->input('login-email'))->first();
+
+        if ($user && Hash::check($request->input('login-pass'), $user->password)) {
+            Auth::login($user);
+
+
+
+            // Authentication successful
+            return redirect()->route('Home')->with('success', 'Login successful.');
+        } else {
+            // Authentication failed
+            return redirect()->back()->with('error', 'Wrong email or password.');
+        }
+    }
+
+
+    public function signOut()
+    {
+        Auth::logout();
+        return redirect()->route('Home')->with('success', 'Logout successful.');
+    }
     public function Home()
     {
         return view('Homepage');
@@ -70,7 +132,6 @@ class Homepage extends Controller
     {
         return view('HTML.Career');
     }
-
     public function Wellness()
     {
         return view('HTML.Wellness');

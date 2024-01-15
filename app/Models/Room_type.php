@@ -9,7 +9,7 @@ class Room_type extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = "room_type_id"
+    protected $primaryKey = "room_type_id";
 
     public function room()
     {

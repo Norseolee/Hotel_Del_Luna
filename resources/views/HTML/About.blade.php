@@ -12,7 +12,7 @@
         @include('Layout.Navbar')
         <div class="hero" data-aos="fade-down" data-aos-duration="1000">
             <video autoplay loop class="hero-image">
-                <source src="{{ asset('Images/test.mp4')}}" type="video/mp4">
+                <source src="https://res.cloudinary.com/dk0ystu6k/video/upload/v1705313985/test_h5thev.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -49,10 +49,10 @@
                 </div>
             </div>
             <div class="col-lg-6 d-none d-lg-block">
-                <img class="imgaccomlg" src="{{ asset('Images/room.jpg')}}" alt="Room" width="500" />
+                <img class="imgaccomlg" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313967/room_fujo5c.jpg" alt="Room" width="500" />
             </div>
             <div class="col-lg-12 d-md-block d-lg-none">
-                <img class="imgaccomsm" src="{{ asset('Images/room.jpg')}}" alt="Room" width="350" />
+                <img class="imgaccomsm" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313967/room_fujo5c.jpg" alt="Room" width="350" />
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
         <div class="row my-5 d-flex align-items-center swimpool">
             <div class="col-lg-5 d-none d-lg-block">
                 <div class="card-area">
-                    <img class="imgswimpoollg" src="{{ asset('Images/infinitypool.webp')}}" alt="pool" width="430" />
+                    <img class="imgswimpoollg" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313959/infinitypool_lpgk2e.webp" alt="pool" width="430" />
                 </div>
             </div>
             <div class="col-lg-7 d-md-block d-lg-none">
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="col-lg-5 d-md-block d-lg-none">
-                <img class="imgswimpoolsm" src="{{ asset('Images/infinitypool.webp')}}" alt="pool" width="350" />
+                <img class="imgswimpoolsm" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313959/infinitypool_lpgk2e.webp" alt="pool" width="350" />
             </div>
             <div class="col-lg-7 d-none d-lg-block">
                 <h2>Swimming Pools</h2>
@@ -100,7 +100,7 @@
     <div class="container-fluid my-5 spafitnesscon">
         <div class="row my-5 spafitness d-flex align-items-center">
             <div class="col-lg-3 text-center">
-                <img src="{{ asset('Images/fitness.webp')}}" alt="Fitness" width="280px" id="imgfitness" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313943/fitness_naxhtt.webp" alt="Fitness" width="280px" id="imgfitness" />
             </div>
             <div class="col-lg-3">
                 <a href="gym.html">
@@ -114,7 +114,7 @@
                 </p>
             </div>
             <div class="col-lg-3 text-center spa">
-                <img src="{{ asset('Images/spa.jpg')}}" alt="Fitness" width="280px" id="imgfitness" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313974/spa_ckltcm.jpg" alt="Fitness" width="280px" id="imgfitness" />
             </div>
             <div class="col-lg-3">
                 <a href="/Spa">
@@ -133,7 +133,7 @@
     <div class="container-fluid my-5 theatreentcon">
         <div class="row my-5 theatreent d-flex align-items-center">
             <div class="col-lg-3 text-center">
-                <img src="{{ asset('Images/theatre.jpg')}}" alt="Fitness" width="280px" id="imgfitness" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313979/theatre-card_f50uf9.jpg" alt="Fitness" width="280px" id="imgfitness" />
             </div>
             <div class="col-lg-3 text-center">
                 <h2>Entertainment</h2>
@@ -145,7 +145,7 @@
                 </p>
             </div>
             <div class="col-lg-3 text-center">
-                <img src="{{ asset('Images/shootingrange.jpg')}}" alt="shoot" width="280px" id="imgshootrange" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313972/shootingrange_gzgarh.jpg" alt="shoot" width="280px" id="imgshootrange" />
             </div>
             <div class="col-lg-3 text-center">
                 <a href="/Shooting">
@@ -178,10 +178,10 @@
                 </div>
             </div>
             <div class="col-lg-6 d-none d-lg-block">
-                <img class="imgmeetevent" src="{{ asset('Images/meeting.jpg')}}" alt="meeting" width="550" />
+                <img class="imgmeetevent" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313961/meeting_mknujk.jpg" alt="meeting" width="550" />
             </div>
             <div class="col-lg-5 d-md-block d-lg-none">
-                <img class="imgmeetevent" src="{{ asset('Images/meeting.jpg')}}" alt="meeting" width="350" />
+                <img class="imgmeetevent" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313961/meeting_mknujk.jpg" alt="meeting" width="350" />
             </div>
         </div>
     </div>
@@ -205,7 +205,7 @@
                     </p>
                     <div class="row mt-5">
                         <div class="col-lg-4 offset-lg-4">
-                            <img src="{{ asset('Images/hotel_logo.png')}}" alt="logo" width="130" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313955/hotel_logo_neveax.png" alt="logo" width="130" />
                         </div>
                         <div class="col-lg-5 offset-lg-5 mt-4">
                             <div class="carconinfo">

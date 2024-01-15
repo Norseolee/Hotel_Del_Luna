@@ -25,20 +25,19 @@
 
 <!-- css -->
 <link rel="stylesheet" href="{{ asset('Css/Head.css')}}" />
+<script src="{{ asset('Javascript/notification.js') }}"></script>
 
 {{-- javascript --}}
 <script src="{{ asset('Javascript/Toggle_Navbar.js') }}"></script>
 
 <!--Font Awesome  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://kit.fontawesome.com/f15b7da99a.js" crossorigin="anonymous"></script>
 
 <!-- Logo Images -->
-<link rel="apple-touch-icon" sizes="180x180" href="../Images/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="../Images/favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/apple-touch-icon_ntesiq.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313943/favicon-32x32_lrxx8z.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313943/favicon-16x16_xmynus.png" />
 
 
 <!-- Title -->

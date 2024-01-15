@@ -12,7 +12,7 @@
         <div class="hero" data-aos="fade-down" data-aos-duration="1000">
             <!-- Cinematic Video -->
             <video width="100%" loop muted autoplay>
-                <source src="{{ asset('Images/theatre-stage.mp4')}}" type="video/mp4" id="theatre" />
+                <source src="https://res.cloudinary.com/dk0ystu6k/video/upload/v1705313979/theatre-stage_pqydhx.mp4" type="video/mp4" id="theatre" />
                 <source src="movie.ogg" type="video/ogg" />
                 Your browser does not support the video tag.
             </video>
@@ -41,7 +41,7 @@
     <div class="Theatre-flex">
         <div class="Theatre-Card">
             <div class="card">
-                <img src="{{ asset('Images/event1.png')}}" class="card-img-top img-fluid" alt="..." />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313937/event1_siuwz4.png" class="card-img-top img-fluid" alt="..." />
                 <div class="card-body">
                     <p class="price">$350</p>
                     <h5 class="card-title">Phanto: Opera</h5>
@@ -86,7 +86,7 @@
         </div>
         <div class="Theatre-Card">
             <div class="card">
-                <img src="{{ asset('Images/event2.png')}}" class="card-img-top img-fluid" alt="..." />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313937/event2_rxfwd3.png" class="card-img-top img-fluid" alt="..." />
                 <div class="card-body">
                     <p class="price">$200</p>
                     <h5 class="card-title">La Prima</h5>
@@ -127,7 +127,7 @@
         </div>
         <div class="Theatre-Card">
             <div class="card">
-                <img src="{{ asset('Images/event3.png')}}" class="card-img-top img-fluid" alt="..." />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313937/event3_kzthjs.png" class="card-img-top img-fluid" alt="..." />
                 <div class="card-body">
                     <p class="price">$280</p>
                     <h5 class="card-title">Casablanca</h5>
@@ -166,7 +166,7 @@
         </div>
         <div class="Theatre-Card">
             <div class="card">
-                <img src="{{ asset('Images/event4.png')}}" class="card-img-top img-fluid" alt="..." />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313938/event4_wozuhq.png" class="card-img-top img-fluid" alt="..." />
                 <div class="card-body">
                     <p class="price">$150</p>
                     <h5 class="card-title">La Bayadère</h5>
@@ -212,7 +212,7 @@
     <h5 class="text-center pt-5">THE THEATRE FEATURES AND AMENITIES</h5>
     <div class="gallery-image pt-0">
         <div class="img-box">
-            <img src="{{ asset('Images/amenities1.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313928/amenities1_harhws.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Theatre Bar</p>
@@ -221,7 +221,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/amenities2.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313928/amenities2_hqt6h5.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Front Gate</p>
@@ -230,7 +230,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/amenities3.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313928/amenities3_pd7dsi.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Theatre</p>
@@ -241,7 +241,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/amenities4.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/amenities4_jgmmdu.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Theatre Chair</p>
@@ -250,7 +250,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/amenities5.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/amenities5_v2g0du.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Theatre Parking</p>
@@ -261,7 +261,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/amenities6.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313928/amenities6_vqhjge.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Theatre Cafe</p>

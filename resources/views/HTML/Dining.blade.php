@@ -40,7 +40,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{ asset('Images/dining_1.PNG')}}" class="d-block w-100" alt="Father Retreat" />
+                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313932/dining_1_pzuipd.png" class="d-block w-100" alt="Father Retreat" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>KOMA</h5>
                             <h5>JAPANESE | FINE DINING</h5>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('Images/dining_2.PNG')}}" class="d-block w-100" alt="child and father swimming in the pool" />
+                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313933/dining_2_haiyoz.png" class="d-block w-100" alt="child and father swimming in the pool" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>CUT</h5>
                             <h5>WESTERN | FINE DINING</h5>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="{{ asset('Images/dining_3.png')}}" class="d-block w-100" alt="..." />
+                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313933/dining_3_nybnth.png" class="d-block w-100" alt="..." />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>ENDLESS LUNCH SELECTIONS</h5>
                             <p>
@@ -89,7 +89,7 @@
             <a href="/Dining/{{$r->restaurant_id}}">
                 <div class="restaurants">
                     <div class="restaurant-image">
-                        <img class="resto-image" src="{{ asset('Images/dining/' . $r->picture) }}" />
+                        <img class="resto-image" src="{{ $r->picture }}" />
                     </div>
                     <div class="restaurant-info">
                         <p class="resto-name">{{ $r->restaurant_name }}</p>
@@ -101,7 +101,7 @@
             @endforeach
 
         </div>
-
+   
         <div class="chef"></div>
 
         {{-- TODO: SUBMITT --}}

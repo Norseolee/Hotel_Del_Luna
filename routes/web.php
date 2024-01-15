@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homepage;
 
 
-Route::get('/', [Homepage::class, 'Home']);
+Route::get('/', [Homepage::class, 'Home'])->name('Home');
 Route::get('/About', [Homepage::class, 'About']);
 Route::get('/Rewards', [Homepage::class, 'Reward']);
-Route::get('/Account', [Homepage::class, 'Account']);
+
 Route::get('/Dining', [Homepage::class, 'Dining']);
 Route::get('/Dining/{restaurant_id}', [Homepage::class, 'ShowResto']);
 Route::get('/Entertainment', [Homepage::class, 'Entertainment']);
@@ -19,3 +19,12 @@ Route::get('/Spa', [Homepage::class, 'Spa']);
 Route::get('/Swimmingpool', [Homepage::class, 'Swimmingpool']);
 Route::get('/Careers', [Homepage::class, 'Career']);
 Route::get('/Wellness', [Homepage::class, 'Wellness']);
+
+Route::get('/SignInSignOut', [Homepage::class, 'SignIn_SignUp'])->name('sign-in-sign-up');
+Route::post('/create-account', [Homepage::class, 'createAccount'])->name('create-account');
+Route::post('/Sign-in', [Homepage::class, 'signIn'])->name('sign-in');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/Account', [Homepage::class, 'Account']);
+    Route::post('/Sign-out', [Homepage::class, 'signOut'])->name('sign-out');
+});

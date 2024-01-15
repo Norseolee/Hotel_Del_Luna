@@ -4,14 +4,12 @@
 <head>
     @include('Layout.Head')
     <link rel="stylesheet" href="{{ asset('Css/Room.css')}}">
-
 </head>
 
 <body>
     <header>
         @include('Layout.Navbar')
         <div class="hero">
-
         </div>
     </header>
 
@@ -35,7 +33,8 @@
                             <input class="datePicker" type="date" />
                         </div>
                         <div>
-                            <label>Guest</label>
+                            <label>Adults: </label>
+                            <input type="number" placeholder="0" />
                         </div>
                         <div>
                             <label>Children:</label>
@@ -96,7 +95,7 @@
         <div class="Room_Suite_City">
 
             <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="../images/hotelbed1.png" alt="Card image cap" />
+                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313956/hotelbed1_wqr6nb.png" alt="Card image cap" />
                 <div class="card-body">
                     <h5 class="card-title font_color">Double Room</h5>
                     <p>$129 | <span id="price">per night</span></p>
@@ -142,7 +141,7 @@
             </div>
 
             <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="../images/hotelbed2.png" alt="Card image cap" />
+                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313957/hotelbed2_yki6bv.png" alt="Card image cap" />
                 <div class="card-body">
                     <h5 class="card-title font_color">Queen Bed Room</h5>
                     <p>$129 | <span id="price">per night</span></p>
@@ -179,7 +178,7 @@
 
 
             <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="../images/hotelbed3.png" alt="Card image cap" />
+                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313957/hotelbed3_qzxxsm.png" alt="Card image cap" />
                 <div class="card-body">
                     <h5 class="card-title font_color">King Bed Room</h5>
                     <p>$129 | <span id="price">per night</span></p>
@@ -216,7 +215,7 @@
 
 
             <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="../images/hotelbed4.png" alt="Card image cap" />
+                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313957/hotelbed4_x7lffh.png" alt="Card image cap" />
                 <div class="card-body">
                     <h5 class="card-title">Twin Room</h5>
                     <p>$129 | <span id="price">per night</span></p>
@@ -261,7 +260,7 @@
     <h5 class="text-center mt-5">FEATURES AND AMENITIES</h5>
     <div class="gallery-image pt-0">
         <div class="img-box">
-            <img src="{{ asset('Images/swimmingpool.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313977/swimmingpool_guxhdu.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Swimming Pool</p>
@@ -270,7 +269,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/spamassage.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313975/spamassage_jz6k6o.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Spa</p>
@@ -279,7 +278,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/surfing.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313976/surfing_vw5egr.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Surfing</p>
@@ -290,7 +289,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/conference-room.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/conference-room_bcyfse.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Conference</p>
@@ -299,7 +298,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/snorkeling.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313973/snorkeling_shzvtm.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Snorkeling</p>
@@ -308,7 +307,7 @@
             </div>
         </div>
         <div class="img-box">
-            <img src="{{ asset('Images/gym.png')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313946/gym_pyhuwz.png" alt="" />
             <div class="transparent-box">
                 <div class="caption">
                     <p>Gym</p>

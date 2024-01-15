@@ -15,7 +15,7 @@
 
     <main>
         <div class="spa">
-            <img class='images' src="{{ asset('Images/spa2.jpg')}}" alt="" />
+            <img class='images' src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313974/spa2_eca72u.jpg" alt="" />
         </div>
         <div class="spa-details">
             <h1>HOTEL DEL LUNA SPA</h1>

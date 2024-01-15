@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row justify-content-center align-content-center">
             <div class="logo-footer" data-aos="zoom-in" data-aos-duration="800">
-                <img src="../images/hotel_logo.png" alt="" width="90px" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313955/hotel_logo_neveax.png" alt="" width="90px" />
                 <!-- <h3 class="logo_name ps-2">Hotel Del Luna</h3> -->
             </div>
         </div>

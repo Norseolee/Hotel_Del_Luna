@@ -26,7 +26,7 @@
             <div class="deals">
                 <div class="card_deal">
                     <div class="card_image_deal">
-                        <img src="{{ asset('Images/spa.jpg')}}" alt="family in a spa message" />
+                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313974/spa_ckltcm.jpg" alt="family in a spa message" />
                         <div class="content_card_deal">
                             <div class="card_title">
                                 <h3>Spa</h3>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="card_deal">
                     <div class="card_image_deal">
-                        <img src="{{ asset('Images/infinitypool.webp')}}" alt=" swimming in the pool" />
+                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313959/infinitypool_lpgk2e.webp" alt=" swimming in the pool" />
                     </div>
                     <div class="content_card_deal">
                         <div class="card_title">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="card_deal">
                     <div class="card_image_deal">
-                        <img src="{{ asset('Images/gym.png')}}" alt="Picture of Gym" />
+                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313946/gym_pyhuwz.png" alt="Picture of Gym" />
                     </div>
                     <div class="content_card_deal">
                         <div class="card_title">

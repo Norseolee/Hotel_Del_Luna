@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-    background-image: url(../Images/room.jpg) !important;
+    background-image: url("https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313967/room_fujo5c.jpg") !important;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

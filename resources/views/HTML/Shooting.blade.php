@@ -47,14 +47,14 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <img src="../images/shootingbay.jpg" alt="Shooting range" width="450" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313972/shootingbay_samxay.jpg" alt="Shooting range" width="450" />
             </div>
         </div>
     </div>
     <div class="container my-5">
         <div class="row d-flex align-items-center">
             <div class="col-lg-6">
-                <img src="../images/shooting locker.jpg" alt="shooting locker" width="450" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313970/shooting_locker_kvqdmx.jpg" alt="shooting locker" width="450" />
             </div>
             <div class="col-lg-6">
                 <p>
@@ -74,16 +74,16 @@
         </p>
         <div class="row d-flex align-items-center">
             <div class="col-lg-3">
-                <img src="../images/071917_shooting.jpg" alt="view shooting" width="250" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313928/071917_shooting_pe8cdh.jpg" alt="view shooting" width="250" />
             </div>
             <div class="col-lg-3">
-                <img src="../images/digital camera.jpg" alt="digital" width="250" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/digital_camera_mqyuls.jpg" alt="digital" width="250" />
             </div>
             <div class="col-lg-3">
-                <img src="../images/shootingrange.jpg" alt="shortrange" width="250" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313972/shootingrange_gzgarh.jpg" alt="shortrange" width="250" />
             </div>
             <div class="col-lg-3">
-                <img src="../images/guns.jpg" alt="guns" width="250" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313946/guns_zlexsv.jpg" alt="guns" width="250" />
             </div>
         </div>
     </div>

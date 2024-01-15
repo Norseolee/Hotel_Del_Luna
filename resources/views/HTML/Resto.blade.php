@@ -10,7 +10,7 @@
     <header>
         @include('Layout.Navbar')
         <div class="hero" data-aos="fade-down" data-aos-duration="1000">
-            <img src="{{ asset('Images/dining/' . $restaurant->picture) }}"
+            <img src="{{ $restaurant->picture }}"
                 alt="{{$restaurant->restaurant_name}} picture">
         </div>
     </header>
@@ -79,8 +79,8 @@
         @foreach ($restaurant_gallery as $gallery)
         @if ($gallery->restaurant_id == $restaurant->restaurant_id)
         <div class="gallery-item">
-            <img src="{{ asset('Images/dining/' . $gallery->picture) }}" alt="Gallery Image"
-                onclick="openLightbox('{{ asset('Images/dining/' . $gallery->picture) }}')">
+            <img src="{{ $gallery->picture }}" alt="Gallery Image"
+                onclick="openLightbox('{{ $gallery->picture }}')">
         </div>
         @endif
         @endforeach

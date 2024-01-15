@@ -14,7 +14,7 @@
 
     <main>
         <div class="spa">
-            <img src="../images/career.jpg" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/career_krm1oa.jpg" alt="" />
         </div>
         <div class=" spa-details">
             <h1>BE PART OF THE HOTEL DEL LUNA FAMILY!</h1>
@@ -29,7 +29,7 @@
                 <div class="deals">
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="../images/SOLEC.jpg" alt="family in a spa message" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313973/SOLEC_j5i0gc.jpg" alt="family in a spa message" />
                             <div class="content_card_deal">
                                 <div class="card_title">
                                     <h3>Career Opportunities at Hotel Del Luna</h3>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="../images/Facade.jpg" alt="child and father swimming in the pool" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313940/Facade_uh9dvo.jpg" alt="child and father swimming in the pool" />
                         </div>
                         <div class="content_card_deal">
                             <div class="card_title">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="../images/Service-min.jpeg" alt="family swimming in the pool" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313969/Service-min_lxfdxh.jpg" alt="family swimming in the pool" />
                         </div>
                         <div class="content_card_deal">
                             <div class="card_title">

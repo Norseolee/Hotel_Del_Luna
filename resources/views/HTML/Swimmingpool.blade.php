@@ -15,7 +15,7 @@
 
     <main>
         <div class="pool">
-            <img src="{{ asset('Images/pool2.jpg')}}" alt="" />
+            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313965/pool2_cdy5mo.jpg" alt="" />
         </div>
         <div class="pool-details">
             <h1>THE POOL AND POOLSIDE</h1>

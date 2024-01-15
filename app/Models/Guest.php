@@ -7,34 +7,27 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Auth\Authenticatable as AuthenticatableTrait;
 
-/**
- * Class Guest
- * 
- * @property int $guest_id
- * @property string $first_name
- * @property string $last_name
- * @property string $email
- * @property string $password
- * @property string|null $address
- *
- * @package App\Models
- */
-class Guest extends Model
+class Guest extends Model implements Authenticatable
 {
-	protected $table = 'guests';
-	protected $primaryKey = 'guest_id';
-	public $timestamps = false;
+    use AuthenticatableTrait;
 
-	protected $hidden = [
-		'password'
-	];
+    protected $table = 'guests';
+    protected $primaryKey = 'guest_id';
+    public $timestamps = false;
 
-	protected $fillable = [
-		'first_name',
-		'last_name',
-		'email',
-		'password',
-		'address'
-	];
+    protected $hidden = [
+        'password'
+    ];
+
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'email',
+        'password',
+        'address'
+    ];
+
 }

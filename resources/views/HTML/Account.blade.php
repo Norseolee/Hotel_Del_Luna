@@ -13,7 +13,7 @@
         </span>
         <a href="../index.html">
             <div class="sidebar-top pt-4">
-                <img src="../images/hotel_logo.png" width="50%" alt="" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313955/hotel_logo_neveax.png" width="50%" alt="" />
                 <span class="pt-1 logo_name">Hotel Del Luna</span>
             </div>
         </a>
@@ -86,10 +86,10 @@
                             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="../images/sample-carousel1.jpg" class="d-block w-100" alt="..." />
+                                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313969/sample-carousel1_h3zdfq.jpg" class="d-block w-100" alt="..." />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../images/sample-carousel2.jpg" class="d-block w-100" alt="..." />
+                                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313969/sample-carousel2_zqos6s.jpg" class="d-block w-100" alt="..." />
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
@@ -155,10 +155,10 @@
                             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="../images/sample-carousel1.jpg" class="d-block w-100" alt="..." />
+                                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313969/sample-carousel1_h3zdfq.jpg" class="d-block w-100" alt="..." />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../images/sample-carousel2.jpg" class="d-block w-100" alt="..." />
+                                        <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313969/sample-carousel2_zqos6s.jpg" class="d-block w-100" alt="..." />
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button"
@@ -216,7 +216,7 @@
 
         <nav>
             <a class="profile">
-                <img src="../images/default_pp.png" />
+                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/default_pp_hlqdny.png" />
                 <span id="account_name">Account</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
@@ -236,7 +236,7 @@
                     <div class="container mt-3">
                         <form class="form-acc-setting">
                             <div class="upload">
-                                <img id="selectedImage" src="../images/noprofil.jpg" width="200" height="200" alt="" />
+                                <img id="selectedImage" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313962/noprofil_ddrqqk.jpg" width="200" height="200" alt="" />
                                 <div class="round">
                                     <input type="file" id="imageInput" onchange="displaySelectedImage(event)" />
                                     <i class="fa fa-camera" style="color: #fff"></i>
@@ -1041,7 +1041,7 @@
                 <section id="reserve" class="section reserve">
                     <div class="card">
                         <div class="image">
-                            <img src="../images/reservation_img.jpg" alt="Reservation Image" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313966/reservation_img_tinuk5.jpg" alt="Reservation Image" />
                         </div>
                         <div class="details">
                             <h5>Date booked: 06/15/23</h5>
@@ -1062,7 +1062,7 @@
                 <section id="ht" class="section history-trips">
                     <div class="card">
                         <div class="image">
-                            <img src="../images/history.jpg" alt="Image" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313949/history_iymwzg.jpg" alt="Image" />
                         </div>
                         <div class="details">
                             <h5>Date booked: 06/15/23</h5>
@@ -1083,7 +1083,7 @@
                 <section id="refund" class="section refund">
                     <div class="card">
                         <div class="image">
-                            <img src="../images/refund_img.jpg" alt="Image" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313965/refund_img_uci1gx.jpg" alt="Image" />
                         </div>
                         <div class="details">
                             <h5>Date cancelled: 06/15/23</h5>
@@ -1104,13 +1104,13 @@
                     <div class="row">
                         <div class="col-lg-5 payment-center">
                             <button class="google-pay-button">
-                                <img src="../images/google-pay-logo.png" alt="Google Pay" />
+                                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313945/google-pay-logo_jbc4oh.png" alt="Google Pay" />
                             </button>
                             <button class="gcash-button">
-                                <img src="../images/gcash.png" alt="GCash" />
+                                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313944/gcash_mjtlpb.png" alt="GCash" />
                             </button>
                             <button class="paypal-button">
-                                <img src="../images/paypal-logo.png" alt="Paypal" />
+                                <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313962/paypal-logo_awaqqc.png" alt="Paypal" />
                             </button>
                         </div>
                         <div class="col-lg-1 or_center">OR</div>

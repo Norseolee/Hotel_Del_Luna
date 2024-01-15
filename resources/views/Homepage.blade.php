@@ -49,7 +49,7 @@
                 <div class="deals">
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="../Images/Father_Retreat.jpg" alt="family in a spa message" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/Father_Retreat_zoiplk.jpg" alt="family in a spa message" />
                             <div class="content_card_deal">
                                 <div class="card_title">
                                     <h3>Father's Day Retreat</h3>
@@ -68,7 +68,7 @@
                     </div>
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="../Images/indoor-climbing.jpg" alt="child and father swimming in the pool" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313958/indoor-climbing_ftljwb.jpg" alt="child and father swimming in the pool" />
                         </div>
                         <div class="content_card_deal">
                             <div class="card_title">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="card_deal">
                         <div class="card_image_deal">
-                            <img src="../Images/Family_Fun_Getaway.jpg" alt="family swimming in the pool" />
+                            <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313940/Family_Fun_Getaway_cje1va.jpg" alt="family swimming in the pool" />
                         </div>
                         <div class="content_card_deal">
                             <div class="card_title">
@@ -130,7 +130,7 @@
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
                                                     <img alt="resto bar of Marina bay sands"
-                                                        src="images/dining_thumbnail.png" />
+                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313937/dining_thumbnail_e5sc5m.png" />
 
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">
@@ -149,7 +149,7 @@
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
                                                     <img alt="resto bar of Marina bay sands"
-                                                        src="images/room_suite.png" />
+                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313968/room_suite_yyytym.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">
                                                             unveiling our new Rooms and Suites
@@ -166,7 +166,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="girl in outdoor pool" src="images/out_pool_model.PNG" />
+                                                    <img alt="girl in outdoor pool" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313962/out_pool_model_e0lb8x.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">
                                                             Take a dip in the infinity Pool
@@ -187,7 +187,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="family in the boat" src="images/boat_sampan.png" />
+                                                    <img alt="family in the boat" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/boat_sampan_bbfrie.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Sampan Rides</h3>
                                                         <button class="btn_Experience">Check out</button>
@@ -200,7 +200,7 @@
                                                 <div class="card_exp">
                                                     <div class="card_image_exp">
                                                         <img alt="family in the boat"
-                                                            src="images/shooting_thumbnail.webp" />
+                                                            src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313971/shooting_thumbnail_ezwggx.webp" />
                                                         <div class="card_body_exp">
                                                             <h3 class="card-title">Shooting Range</h3>
                                                             <a href="/Shooting"><button class="btn_Experience">
@@ -215,7 +215,7 @@
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
                                                     <img alt="digital art of marina bay sands"
-                                                        src="images/dance_floor_art.jfif" />
+                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/dance_floor_art_ywdisa.jpg" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Digital Light Canvas</h3>
                                                         <button class="btn_Experience">Check out</button>
@@ -230,7 +230,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="100%x280" src="images/Clubs.png" />
+                                                    <img alt="100%x280" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/Clubs_vg3b6t.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Marquee Singapore</h3>
                                                         <button class="btn_Experience">Check out</button>
@@ -241,7 +241,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="Casino" src="images/Casino.webp" />
+                                                    <img alt="Casino" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/Casino_thuyhj.webp" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Hotel Del Luna Casino</h3>
                                                         <button class="btn_Experience">Check out</button>
@@ -252,7 +252,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="many rings" src="images/luxury_shoping.PNG" />
+                                                    <img alt="many rings" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313961/luxury_shoping_bklpwq.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">
                                                             Luxury never goes out of style
@@ -286,7 +286,7 @@
         --}}
         <!-- ? WELLNESS CAMP -->
         <section class="wellness_camp">
-            <img class="wellness_img" data-aos="zoom-in" data-aos-duration="1000" src="images/swimming.jpg" alt="spa" />
+            <img class="wellness_img" data-aos="zoom-in" data-aos-duration="1000" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313976/swimming_x6mhk0.jpg" alt="spa" />
             <h1 class="mt-3">WELLNESS CAMP</h1>
             <p>
                 Discover the path to wellness at Hotel Del Luna's Wellness Camp.<br />
@@ -316,7 +316,7 @@
                                             <div class="col-md-8 mb-3">
                                                 <div class="card_well">
                                                     <img class="card_image_wellness" alt="people running in tranmil"
-                                                        src="images/gym_pic.jpg" />
+                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313947/gym_pic_lf2ivc.jpg" />
                                                 </div>
                                             </div>
                                         </div>
@@ -337,7 +337,7 @@
                                             <div class="col-md-8 mb-3">
                                                 <div class="card_well">
                                                     <img class="card_image_wellness" alt="girl massage"
-                                                        src="images/spa.jpg" />
+                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313975/spamassage_jz6k6o.png" />
                                                 </div>
                                             </div>
                                         </div>
@@ -358,7 +358,7 @@
                                             <div class="col-md-8 mb-3">
                                                 <div class="card_well">
                                                     <img class="card_image_wellness" alt="indoor climbing"
-                                                        src="images/healty_food.png" />
+                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313947/healty_food_cztoty.png" />
                                                 </div>
                                             </div>
                                         </div>
@@ -398,19 +398,19 @@
 
             <div class="reward_card_design" data-aos="zoom-in" data-aos-duration="1000">
                 <p class="reward_card">
-                    <i><img src="../Images/favicon.ico" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />123 456 7890
                 </p>
                 <p class="reward_card">
-                    <i><img src="../Images/favicon.ico" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />975 310 4826
                 </p>
                 <p class="reward_card">
-                    <i><img src="../Images/favicon.ico" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />624 578 1930
                 </p>
                 <p class="reward_card">
-                    <i><img src="../Images/favicon.ico" /></i>
+                    <i><img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/favicon_sa2lmw.ico" /></i>
                     <br />408 729 5613
                 </p>
             </div>

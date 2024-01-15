@@ -12,7 +12,7 @@
 
     <main>
         <div class="gym">
-            <img class="images" src="../images/gym.jpg" alt="" />
+            <img class="images" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313946/gym_hpowhy.jpg" alt="" />
         </div>
         <div class="gym-details">
             <h1>HOTEL DEL LUNA GYM</h1>
