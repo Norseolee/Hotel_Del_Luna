@@ -66,7 +66,6 @@
                     </div>
                 </div>
             </form>
-
         </div>
 
         <div class="availablity_btn">
@@ -74,9 +73,9 @@
         </div>
 
     </section>
-
-    <section class="intro_room_suite mt-5 text-center">
-        <h1>RETREAT INTO YOUR PRIVATE SANCTUARY</h1>
+<!-- intro_room_suite -->
+    <section class=" text-center m-5">
+        <h1 class="gold">RETREAT INTO YOUR PRIVATE SANCTUARY</h1>
         <p>Every moment of your stay is an artfully curated experience at Hotel del Luna. Our three distinctive
             collections present a handpicked selection of rooms and suites, meticulously crafted to cater to your unique
             desires and needs. Begin your day with breathtaking views of your choosing, whether it's the lush Gardens by
@@ -87,174 +86,10 @@
     </section>
     <!-- Gallery -->
 
-    <div class="container text-center mt-5">
-        <h3 class="font_color">Rooms & Suites</h3>
-    </div>
-
-    <div class="container">
-        <div class="Room_Suite_City">
-
-            <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313956/hotelbed1_wqr6nb.png" alt="Card image cap" />
-                <div class="card-body">
-                    <h5 class="card-title font_color">Double Room</h5>
-                    <p>$129 | <span id="price">per night</span></p>
-                    <p class="card-text">
-                        <i> "Twice the Comfort, Double the Relaxation."</i>
-                    </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Book | Details
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        DOUBLE ROOM (1 QUEEN BED AND 1 SINGLE BED)
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ROOM DETAILS
-                                    <ul>
-                                        <li>345 sq ft / 32 sq m</li>
-                                        <li>1 Queen Beds</li>
-                                        <li>1 Single Bed</li>
-                                        <li>Maximum Occupancy: 3 Adults and 2 Kids</li>
-                                        <li>Rooms located at 10/F - 29/F</li>
-                                        <li>City View</li>
-                                    </ul>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                        Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        Book Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313957/hotelbed2_yki6bv.png" alt="Card image cap" />
-                <div class="card-body">
-                    <h5 class="card-title font_color">Queen Bed Room</h5>
-                    <p>$129 | <span id="price">per night</span></p>
-                    <p class="card-text">
-                        <i> "Experience Regal Comfort in a Queen-Sized Haven."</i>
-                    </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Book | Details
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Modal title
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">...</div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                        Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        Book Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313957/hotelbed3_qzxxsm.png" alt="Card image cap" />
-                <div class="card-body">
-                    <h5 class="card-title font_color">King Bed Room</h5>
-                    <p>$129 | <span id="price">per night</span></p>
-                    <p class="card-text">
-                        <i> "Luxuriate in Royal Opulence in a King-Sized Retreat."</i>
-                    </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Book | Details
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Modal title
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">...</div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                        Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        Book Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313957/hotelbed4_x7lffh.png" alt="Card image cap" />
-                <div class="card-body">
-                    <h5 class="card-title">Twin Room</h5>
-                    <p>$129 | <span id="price">per night</span></p>
-                    <p class="card-text">
-                        <i>
-                            "Share Adventures and Sweet Dreams in a Cozy Twin-Sized
-                            Oasis."</i>
-                    </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Book | Details
-                    </button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">
-                                        Modal title
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">...</div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                        Close
-                                    </button>
-                                    <button type="button" class="btn btn-primary">
-                                        Book Now
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div>
 
     </div>
+
 
     <!-- Gallery -->
     <h5 class="text-center mt-5">FEATURES AND AMENITIES</h5>

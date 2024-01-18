@@ -54,19 +54,18 @@ class Homepage extends Controller
         if ($user && Hash::check($request->input('login-pass'), $user->password)) {
             Auth::login($user);
 
-
-
             // Authentication successful
             return redirect()->route('Home')->with('success', 'Login successful.');
         } else {
             // Authentication failed
-            return redirect()->back()->with('error', 'Wrong email or password.');
+            return redirect()->back()->with('fail', 'Wrong email or password.');
         }
     }
 
 
     public function signOut()
     {
+        // Authentication logout
         Auth::logout();
         return redirect()->route('Home')->with('success', 'Logout successful.');
     }
@@ -135,5 +134,8 @@ class Homepage extends Controller
     public function Wellness()
     {
         return view('HTML.Wellness');
+    }
+    public function ContactUs() {
+        return view('HTML.ContactUs');
     }
 }

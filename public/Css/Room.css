@@ -1,6 +1,4 @@
-body {
-    user-select: none;
-}
+
 
 .font_color {
     color: var(--buttonColorHover);
@@ -120,12 +118,7 @@ body {
 .availablity:focus {
     outline: none;
 }
-
-.intro_room_suite {
-    margin-inline: 200px;
-}
-
-.intro_room_suite h1 {
+.gold {
     color: var(--buttonColorHover);
 }
 

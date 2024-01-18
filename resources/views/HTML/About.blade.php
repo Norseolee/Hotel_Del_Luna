@@ -11,7 +11,7 @@
     <header>
         @include('Layout.Navbar')
         <div class="hero" data-aos="fade-down" data-aos-duration="1000">
-            <video autoplay loop class="hero-image">
+            <video autoplay disablePictureInPicture loop class="hero-image">
                 <source src="https://res.cloudinary.com/dk0ystu6k/video/upload/v1705313985/test_h5thev.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>

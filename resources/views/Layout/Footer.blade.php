@@ -16,9 +16,9 @@
                     </ul>
                     <h2 class="pt-4">ABOUT HOTEL MANILA</h2>
                     <ul>
-                        <li><a href="HTML/aboutus.html">About Us</a></li>
+                        <li><a href="/About">About Us</a></li>
                         <li><a href="/Careers">Careers</a></li>
-                        <li><a href="HTML/contact.html">Contact Us</a></li>
+                        <li><a href="/ContactUs">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -26,10 +26,11 @@
                 <div class="single-box">
                     <h2>STAY</h2>
                     <ul>
-                        <li><a href="#">Rooms</a></li>
-                        <li><a href="#">Suites</a></li>
-                        <li><a href="#">Villas</a></li>
-                        <li><a href="#">Facilities</a></li>
+                        <li><a href="/Rooms">DELUXE ROOM</a></li>
+                        <li><a href="/Rooms">SANDS FAMILY SUITE</a></li>
+                        <li><a href="/Rooms">PAIZA PERMIER SUITE</a></li>
+                        <li><a href="/Rooms">ORCHID SUITE</a></li>
+                        <li><a href="/Rooms">PREMIER ROOM</a></li>
                     </ul>
                     <h2 class="pt-4">SHOP</h2>
                     <ul>
@@ -42,15 +43,13 @@
                 <div class="single-box">
                     <h2>DINE</h2>
                     <ul>
-                        <li><a href="HTML/dining.html">KFC</a></li>
-                        <li><a href="HTML/dining.html">McDonalds</a></li>
-                        <li><a href="HTML/dining.html">Greenwich</a></li>
-                        <li><a href="HTML/dining.html">Jollibee</a></li>
-                        <li><a href="HTML/dining.html">Gnern</a></li>
+                        @foreach ($resto_footer as $resto)
+                        <li><a href="/Dining/{{ $resto->restaurant_id  }}}">{{ $resto->restaurant_name }}</a></li>
+                        @endforeach
                     </ul>
                     <h2 class="pt-4">RELAX</h2>
                     <ul>
-                        <li><a href="HTML/spa.html">SPA</a></li>
+                        <li><a href="/Spa">SPA</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,26 +68,26 @@
 
                     <h2 class="pt-4">Follow us on</h2>
                     <p class="socials">
-                        <a href=""><i class="fa fa-facebook"></i></a>
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href=""><i class="fa fa-instagram"></i></a>
-                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>
                     </p>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="800">
+        <div>
             <ul class="terms">
-                <li>About</li>
+                <li> <a href="https://About.com/">About</a></li>
                 |
-                <li>Privacy</li>
+                <li><a href="https://privacypolicy.com/">Privacy</a></li>
                 |
-                <li>Terms of Use</li>
+                <li><a href="https://termsofuse.com/">Terms of Use</a></li>
                 |
-                <li>Careers</li>
+                <li><a href="/Careers">Careers</a></li>
             </ul>
         </div>
-        <div class="Bottom" data-aos="fade-up" data-aos-duration="800">
+        <div class="Bottom">
             <p>Copyright @2023 Nor, Mat, Ameth, Poy, All Rigths Reserved</p>
         </div>
     </div>

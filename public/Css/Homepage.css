@@ -3,7 +3,7 @@
 .hero {
     background-color: #07182e;
     min-height: 300px;
-    height: 762px;
+    height: 90vh;
     background-image: url("https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313951/Hotel_2_aa4jr8.jpg");
     background-size: cover;
     background-position: center;
@@ -13,34 +13,18 @@
 main {
     font-family: var(--fonts);
     background-color: var(--white);
-    text-align: center;
 }
 .welcome {
-    user-select: none;
     background-color: var(--MainBlue);
-    text-align: center;
 }
 .welcome h1 {
     color: var(--gold);
 }
-.welcome p {
-    color: var(--white);
-    padding-bottom: 10px;
-}
 /* ============================= DEAL OF THE MONTH ====================== */
-.deal_of_month {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-}
 .deal_of_month h1 {
-    padding-top: 10px;
     color: var(--gold);
 }
 .deals {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
 }
 .card_title {
@@ -192,7 +176,6 @@ main {
     object-fit: cover;
 }
 .content_wellness {
-    /* content height of wellness */
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -207,17 +190,9 @@ main {
     transition: background-color 0.2s;
     border-style: none;
 }
-.all_wellness {
-    position: relative;
-}
-.section_btn_wellness {
-    position: absolute;
-    bottom: 50px;
-    left: -33.2%;
-}
+
 
 .btn_wellness {
-    margin-top: 10px;
     background-color: var(--buttonColorHover);
     width: 150px;
 }
@@ -233,7 +208,9 @@ main {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
+.reward_cards_section div h1 {
+    color: var(--gold)
+}
 .reward_card_design {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -453,8 +430,8 @@ main {
         background-color: var(--buttonColorHover);
         width: 50px;
     }
-    /* 
-    
+    /*
+
     */
     .reward_card_design {
         height: 350px;

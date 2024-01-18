@@ -42,4 +42,9 @@ class RoomType extends Model
 		'sqm',
 		'layout'
 	];
+
+	public function room()
+    {
+        return $this->belongsTo(Room::class);
+    }
 }

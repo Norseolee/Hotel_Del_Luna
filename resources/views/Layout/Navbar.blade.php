@@ -1,7 +1,7 @@
 <div class="navbar">
     <div class="nav_bar_left" data-aos="fade-right" data-aos-duration="800">
         <a href="/">
-            <img href="/" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705040403/Hotel_Del_Luna/hotel_logo_q82paz.png" width="50px" class="logo_img" />
+            <img href="/" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313955/hotel_logo_neveax.png" width="50px" class="logo_img" />
             <h1 class="logo_name">Hotel Del Luna</h1>
         </a>
     </div>
@@ -10,6 +10,7 @@
     @else
     <p>User is Not Authenticated</p>
     @endif -->
+
     <div class="nav_bar_right" data-aos="fade-left" data-aos-duration="800">
         <a class="link_font" href="/Rooms">Rooms and Suite</a>
         <a class="link_font" href="/Dining">Dining</a>
@@ -27,7 +28,7 @@
                 <form id="logout-form" action="{{ route('sign-out') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
-                <a href="#" class="account_info" onclick="document.getElementById('logout-form').submit();">Log Out</a>
+                <a class="account_info" onclick="document.getElementById('logout-form').submit();">Log Out</a>
             </div>
         </div>
         @else
@@ -57,17 +58,17 @@
                 <a class="toggle_font" href="/Wellness">Wellness</a>
                 <a class="toggle_font" href="/Careers">Careers </a>
                 @if($authUser)
-                <a class="toggle_font_login" href="/SignInSignOut">Login</a>
-                @else
                 <div class="account_hover_toggle">
                     <a class="account_info" href="/Account">Account Setting</a>
                     <form id="logout-form" action="{{ route('sign-out') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
-                    <a href="#" class="account_info" onclick="document.getElementById('logout-form').submit();">Log Out</a>
+                    <a class="account_info" onclick="document.getElementById('logout-form').submit();">Log Out</a>
                 </div>
+                @else
+                <a class="toggle_font_login" href="/SignInSignOut">Login</a>
                 @endif
-                <a class="book_now" href="">Book Now!</a>
+                <a class="book_now" href="/Rooms">Book Now!</a>
                 <a class="rewards" href="/Rewards">Rewards</a>
                 <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313955/hotel_logo_neveax.png" width="100px" />
             </div>

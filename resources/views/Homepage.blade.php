@@ -15,12 +15,12 @@
     </header>
 
 
-    <main>
+    <main class="text-center">
         <!-- ? WELCOME TO HOTEL DE LUNA -->
-        <section class="welcome py-3 px-4">
+        <section class="welcome py-5 px-4">
             <div data-aos="zoom-in" data-aos-duration="800">
                 <h1>Welcome to Hotel De Luna</h1>
-                <p>
+                <p class="text-white">
                     Welcome to Hotel De Luna, where the living and departed converge in
                     a realm of enchantment and secrets. Immerse yourself in an
                     extraordinary experience that transcends the boundaries of the
@@ -35,8 +35,8 @@
         --}}
         <!-- ? DEAL OF THE MONTH -->
         <section class="deal_of_month" data-aos="zoom-in" data-aos-duration="1100">
-            <h1>Celebrating Father's Day</h1>
-            <div class="deal_left">
+            <div class="text-center py-5">
+                <h1>Celebrating Father's Day</h1>
                 <p>
                     Treat your dad to an unforgettable experience at Hotel De Luna.
                     <br />
@@ -46,7 +46,7 @@
                 </p>
             </div>
             <div class="deal_right">
-                <div class="deals">
+                <div class="d-flex justify-content-center flex-wrap deals">
                     <div class="card_deal">
                         <div class="card_image_deal">
                             <img src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313941/Father_Retreat_zoiplk.jpg" alt="family in a spa message" />
@@ -58,7 +58,7 @@
                                     Treat dad to a luxurious getaway with lavish rooms,
                                     rejuvenating spa, refreshing pools, and renowned dining.
                                 </div>
-                                <a href="/Rooms">
+                                <a href="/Spa">
                                     <div class="deal_readmore">
                                         <button class="deal_btn">Read More...</button>
                                     </div>
@@ -80,7 +80,7 @@
                                     climbing and thrilling outdoor adventures.
                                 </p>
                             </div>
-                            <a href="/Rooms">
+                            <a href="/Experience">
                                 <div class="deal_readmore">
                                     <button class="deal_btn">Read More...</button>
                                 </div>
@@ -101,9 +101,11 @@
                                     exploration, and captivating theater performances.
                                 </p>
                             </div>
-                            <div class="deal_readmore">
-                                <button class="deal_btn">Read More...</button>
-                            </div>
+                            <a href="/Wellness">
+                                <div class="deal_readmore">
+                                    <button class="deal_btn">Read More...</button>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -129,8 +131,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="resto bar of Marina bay sands"
-                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313937/dining_thumbnail_e5sc5m.png" />
+                                                    <img alt="resto bar of Marina bay sands" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313937/dining_thumbnail_e5sc5m.png" />
 
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">
@@ -148,8 +149,7 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="resto bar of Marina bay sands"
-                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313968/room_suite_yyytym.png" />
+                                                    <img alt="resto bar of Marina bay sands" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313968/room_suite_yyytym.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">
                                                             unveiling our new Rooms and Suites
@@ -171,7 +171,7 @@
                                                         <h3 class="card-title">
                                                             Take a dip in the infinity Pool
                                                         </h3>
-                                                        <a href="HTML/swimmingpool.html">
+                                                        <a href="/Spa">
                                                             <button class="btn_Experience">
                                                                 Check out
                                                             </button>
@@ -190,7 +190,9 @@
                                                     <img alt="family in the boat" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/boat_sampan_bbfrie.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Sampan Rides</h3>
-                                                        <button class="btn_Experience">Check out</button>
+                                                        <a href="/SampanRides">
+                                                            <button class="btn_Experience">Check out</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,13 +201,13 @@
                                             <div class="card_exp">
                                                 <div class="card_exp">
                                                     <div class="card_image_exp">
-                                                        <img alt="family in the boat"
-                                                            src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313971/shooting_thumbnail_ezwggx.webp" />
+                                                        <img alt="family in the boat" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313971/shooting_thumbnail_ezwggx.webp" />
                                                         <div class="card_body_exp">
                                                             <h3 class="card-title">Shooting Range</h3>
                                                             <a href="/Shooting"><button class="btn_Experience">
                                                                     Check out
-                                                                </button></a>
+                                                                </button>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -214,11 +216,12 @@
                                         <div class="col-md-4 mb-3">
                                             <div class="card_exp">
                                                 <div class="card_image_exp">
-                                                    <img alt="digital art of marina bay sands"
-                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/dance_floor_art_ywdisa.jpg" />
+                                                    <img alt="digital art of marina bay sands" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/dance_floor_art_ywdisa.jpg" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Digital Light Canvas</h3>
-                                                        <button class="btn_Experience">Check out</button>
+                                                        <a href="/DigitalLightCanvas">
+                                                            <button class="btn_Experience">Check out</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -233,7 +236,9 @@
                                                     <img alt="100%x280" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313930/Clubs_vg3b6t.png" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Marquee Singapore</h3>
-                                                        <button class="btn_Experience">Check out</button>
+                                                        <a href="/MarqueeClub">
+                                                            <button class="btn_Experience">Check out</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -244,7 +249,9 @@
                                                     <img alt="Casino" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313929/Casino_thuyhj.webp" />
                                                     <div class="card_body_exp">
                                                         <h3 class="card-title">Hotel Del Luna Casino</h3>
-                                                        <button class="btn_Experience">Check out</button>
+                                                        <a href="/Casino">
+                                                            <button class="btn_Experience">Check out</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -257,7 +264,9 @@
                                                         <h3 class="card-title">
                                                             Luxury never goes out of style
                                                         </h3>
-                                                        <button class="btn_Experience">Check out</button>
+                                                        <a href="/Shop">
+                                                            <button class="btn_Experience">Check out</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -268,8 +277,7 @@
                         </div>
                     </div>
                     <div class="col-12 mt-2">
-                        <a class="btn btn_exp mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
-                            data-slide="prev">
+                        <a class="btn btn_exp mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                             <i class="fa fa-arrow-left"></i>
                         </a>
                         <a class="btn btn_exp mb-3" href="#carouselExampleIndicators2" role="button" data-slide="next">
@@ -287,15 +295,19 @@
         <!-- ? WELLNESS CAMP -->
         <section class="wellness_camp">
             <img class="wellness_img" data-aos="zoom-in" data-aos-duration="1000" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313976/swimming_x6mhk0.jpg" alt="spa" />
-            <h1 class="mt-3">WELLNESS CAMP</h1>
-            <p>
-                Discover the path to wellness at Hotel Del Luna's Wellness Camp.<br />
-                Immerse yourself in rejuvenating spa treatments, invigorating fitness
-                sessions, nourishing cuisine, and tranquil surroundings. <br />
-                Elevate your well-being and embark on a journey of self-care at
-                Wellness Camp.
-            </p>
-            <section class="pt-5 pb-5" data-aos="zoom-in" data-aos-duration="1000">
+
+            <div class='py-5'>
+                <h1>WELLNESS CAMP</h1>
+                <p>
+                    Discover the path to wellness at Hotel Del Luna's Wellness Camp.<br />
+                    Immerse yourself in rejuvenating spa treatments, invigorating fitness
+                    sessions, nourishing cuisine, and tranquil surroundings. <br />
+                    Elevate your well-being and embark on a journey of self-care at
+                    Wellness Camp.
+                </p>
+            </div>
+
+            <section class="py-3" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="container-fluid container_wellness">
                     <div class="row">
                         <div class="col-12 all_wellness">
@@ -311,12 +323,13 @@
                                                     expert trainers, and a breathtaking view come
                                                     together to elevate your workout experience.
                                                 </p>
-                                                <button class="btn-Wellness">Check out</button>
+                                                <a href="/Wellness">
+                                                    <button class="btn-Wellness">Check out</button>
+                                                </a>
                                             </div>
                                             <div class="col-md-8 mb-3">
                                                 <div class="card_well">
-                                                    <img class="card_image_wellness" alt="people running in tranmil"
-                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313947/gym_pic_lf2ivc.jpg" />
+                                                    <img class="card_image_wellness" alt="people running in tranmil" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313947/gym_pic_lf2ivc.jpg" />
                                                 </div>
                                             </div>
                                         </div>
@@ -332,12 +345,13 @@
                                                     with soothing treatments, leaving you refreshed,
                                                     revitalized, and ready to embrace blissful serenity.
                                                 </p>
-                                                <button class="btn-Wellness">Check out</button>
+                                                <a href="/Spa">
+                                                    <button class="btn-Wellness">Check out</button>
+                                                </a>
                                             </div>
                                             <div class="col-md-8 mb-3">
                                                 <div class="card_well">
-                                                    <img class="card_image_wellness" alt="girl massage"
-                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313975/spamassage_jz6k6o.png" />
+                                                    <img class="card_image_wellness" alt="girl massage" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313975/spamassage_jz6k6o.png" />
                                                 </div>
                                             </div>
                                         </div>
@@ -353,12 +367,13 @@
                                                     buds, ensuring a delectable culinary journey that
                                                     promotes wellness.
                                                 </p>
-                                                <button class="btn-Wellness">Check out</button>
+                                                <a href="/Wellness">
+                                                    <button class="btn-Wellness">Check out</button>
+                                                </a>
                                             </div>
                                             <div class="col-md-8 mb-3">
                                                 <div class="card_well">
-                                                    <img class="card_image_wellness" alt="indoor climbing"
-                                                        src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313947/healty_food_cztoty.png" />
+                                                    <img class="card_image_wellness" alt="indoor climbing" src="https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313947/healty_food_cztoty.png" />
                                                 </div>
                                             </div>
                                         </div>
@@ -366,13 +381,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section_btn_wellness">
-                            <a class="btn btn_wellness mb-3 mr-1" href="#carousel_indicator_wellness" role="button"
-                                data-slide="prev">
+                        <div>
+                            <a class="btn btn_wellness" href="#carousel_indicator_wellness" role="button" data-slide="prev">
                                 <i class="fa fa-arrow-left"></i>
                             </a>
-                            <a class="btn btn_wellness mb-3" href="#carousel_indicator_wellness" role="button"
-                                data-slide="next">
+                            <a class="btn btn_wellness" href="#carousel_indicator_wellness" role="button" data-slide="next">
                                 <i class="fa fa-arrow-right"></i>
                             </a>
                         </div>
@@ -386,8 +399,8 @@
 
         --}}
         <!-- ? REWARDS POINTS -->
-        <section class="reward_cards_section">
-            <div data-aos="zoom-in" data-aos-duration="1000">
+        <section class="py-5 reward_cards_section">
+            <div class='' data-aos="zoom-in" data-aos-duration="1000">
                 <h1>REWARDS</h1>
                 <p>
                     Experience a world of luxury at Hotel Del Luna and earn valuable

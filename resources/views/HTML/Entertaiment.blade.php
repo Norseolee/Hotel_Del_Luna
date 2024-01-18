@@ -11,10 +11,8 @@
         @include('Layout.Navbar')
         <div class="hero" data-aos="fade-down" data-aos-duration="1000">
             <!-- Cinematic Video -->
-            <video width="100%" loop muted autoplay>
+            <video width="100%" loop muted autoplay disablePictureInPicture >
                 <source src="https://res.cloudinary.com/dk0ystu6k/video/upload/v1705313979/theatre-stage_pqydhx.mp4" type="video/mp4" id="theatre" />
-                <source src="movie.ogg" type="video/ogg" />
-                Your browser does not support the video tag.
             </video>
         </div>
     </header>

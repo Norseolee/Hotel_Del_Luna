@@ -6,6 +6,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -20,9 +21,13 @@ use Illuminate\Database\Eloquent\Model;
  */
 class ReservedRoom extends Model
 {
+	use HasFactory;
+
 	protected $table = 'reserved_rooms';
 	protected $primaryKey = 'reserved_room_id';
 	public $timestamps = false;
+	
+   
 
 	protected $casts = [
 		'room_id' => 'int',
@@ -35,4 +40,19 @@ class ReservedRoom extends Model
 		'guest_id',
 		'reservation_id'
 	];
+
+    public function reservation()
+    {
+        return $this->belongsTo(Reservation::class);
+    }
+
+    public function guest()
+    {
+        return $this->belongsTo(Guest::class);
+    }
+
+    public function room()
+    {
+        return $this->belongsTo(Room::class);
+    }
 }
