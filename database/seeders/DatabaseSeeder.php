@@ -17,46 +17,222 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         DB::table('room_types')->insert([
-            ['room_type_id' => 1, 'max_capacity' => 3, 'price' => 15800.00, 'description' => 'Host intimate dinners at the 4-seater dining table. Rejuvenate your senses in the luxurious 2-person marble bathtub. Get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'view' => 'City View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '95 sqm on average', 'layout' => '1 king or 2 queen beds'],
-            ['room_type_id' => 2, 'max_capacity' => 3, 'price' => 19400.00, 'description' => 'Host intimate dinners at the 4-seater dining table. Rejuvenate your senses in the luxurious 2-person marble bathtub. Get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'view' => 'City View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '95 sqm on average', 'layout' => '1 king or 2 queen beds'],
-            ['room_type_id' => 3, 'max_capacity' => 3, 'price' => 20000.00, 'description' => 'Host intimate dinners at the 4-seater dining table. Rejuvenate your senses in the luxurious 2-person marble bathtub. Get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'view' => 'City View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '95 sqm on average', 'layout' => '1 king or 2 queen beds'],
-            ['room_type_id' => 4, 'max_capacity' => 3, 'price' => 18000.00, 'description' => 'Host intimate dinners at the 4-seater dining table. Rejuvenate your senses in the luxurious 2-person marble bathtub. Get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'view' => 'Garden View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '95 sqm on average', 'layout' => '1 king or 2 queen beds'],
-            ['room_type_id' => 5, 'max_capacity' => 3, 'price' => 19000.00, 'description' => 'Host intimate dinners at the 4-seater dining table. Rejuvenate your senses in the luxurious 2-person marble bathtub. Get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'view' => 'Garden View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '95 sqm on average', 'layout' => '1 king or 2 queen beds'],
-            ['room_type_id' => 6, 'max_capacity' => 3, 'price' => 20000.00, 'description' => 'Host intimate dinners at the 4-seater dining table. Rejuvenate your senses in the luxurious 2-person marble bathtub. Get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'view' => 'Garden View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '95 sqm on average', 'layout' => '1 king or 2 queen beds'],
-            ['room_type_id' => 7, 'max_capacity' => 4, 'price' => 20000.00, 'description' => 'Travelling with the little ones is a breeze with the fully equipped kitchenette and washer. Create cherished memories and enjoy endless hours of family fun with our exclusively curated Adventure Pack.', 'view' => 'Garden View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '75 – 95 sqm on average', 'layout' => '1 living room & 2 bedrooms'],
-            ['room_type_id' => 8, 'max_capacity' => 4, 'price' => 21400.00, 'description' => 'Travelling with the little ones is a breeze with the fully equipped kitchenette and washer. Create cherished memories and enjoy endless hours of family fun with our exclusively curated Adventure Pack.', 'view' => 'Garden View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '75 – 95 sqm on average', 'layout' => '1 living room & 2 bedrooms'],
-            ['room_type_id' => 9, 'max_capacity' => 4, 'price' => 25000.00, 'description' => 'Travelling with the little ones is a breeze with the fully equipped kitchenette and washer. Create cherished memories and enjoy endless hours of family fun with our exclusively curated Adventure Pack.', 'view' => 'Garden View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '75 – 95 sqm on average', 'layout' => '1 living room & 2 bedrooms'],
-            ['room_type_id' => 11, 'max_capacity' => 3, 'price' => 155000.00, 'description' => 'An exquisitely designed and artfully curated haven of calm in the heart of the city. Take a long bath in your expansive bathroom fitted with a concealed TV, and indulge in the generous curation of treasures in the bespoke Armoire.', 'view' => 'Sea-side View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '55 sqm on average', 'layout' => '1 king bed'],
-            ['room_type_id' => 12, 'max_capacity' => 3, 'price' => 18400.00, 'description' => 'An exquisitely designed and artfully curated haven of calm in the heart of the city. Take a long bath in your expansive bathroom fitted with a concealed TV, and indulge in the generous curation of treasures in the bespoke Armoire.', 'view' => 'Sea-side View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '55 sqm on average', 'layout' => '1 king bed'],
-            ['room_type_id' => 13, 'max_capacity' => 3, 'price' => 20000.00, 'description' => 'An exquisitely designed and artfully curated haven of calm in the heart of the city. Take a long bath in your expansive bathroom fitted with a concealed TV, and indulge in the generous curation of treasures in the bespoke Armoire.', 'view' => 'Sea-side View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '55 sqm on average', 'layout' => '1 king bed'],
-            ['room_type_id' => 14, 'max_capacity' => 3, 'price' => 15800.00, 'description' => 'An exquisitely designed and artfully curated haven of calm in the heart of the city. Take a long bath in your expansive bathroom fitted with a concealed TV, and indulge in the generous curation of treasures in the bespoke Armoire.', 'view' => 'City View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '55 sqm on average', 'layout' => '1 king bed'],
-            ['room_type_id' => 15, 'max_capacity' => 3, 'price' => 18800.00, 'description' => 'An exquisitely designed and artfully curated haven of calm in the heart of the city. Take a long bath in your expansive bathroom fitted with a concealed TV, and indulge in the generous curation of treasures in the bespoke Armoire.', 'view' => 'City View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '55 sqm on average', 'layout' => '1 king bed'],
-            ['room_type_id' => 16, 'max_capacity' => 3, 'price' => 21000.00, 'description' => 'An exquisitely designed and artfully curated haven of calm in the heart of the city. Take a long bath in your expansive bathroom fitted with a concealed TV, and indulge in the generous curation of treasures in the bespoke Armoire.', 'view' => 'City View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '55 sqm on average', 'layout' => '1 king bed'],
-            ['room_type_id' => 17, 'max_capacity' => 6, 'price' => 25000.00, 'description' => 'A bespoke urban sanctuary, designed to pamper and lift your senses. Rejuvenate in your expansive bathroom with enhanced shower facilities, and revel in the suite life with dedicated living and dining areas. A specialty night fridge rests at the entrance of the bedroom, stocked with premium mineral waters.', 'view' => 'Sea-side View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '100 sqm on average', 'layout' => '1 living room & 1 or 2 bedrooms'],
-            ['room_type_id' => 18, 'max_capacity' => 6, 'price' => 27000.00, 'description' => 'A bespoke urban sanctuary, designed to pamper and lift your senses. Rejuvenate in your expansive bathroom with enhanced shower facilities, and revel in the suite life with dedicated living and dining areas. A specialty night fridge rests at the entrance of the bedroom, stocked with premium mineral waters.', 'view' => 'Sea-side View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '100 sqm on average', 'layout' => '1 living room & 1 or 2 bedrooms'],
-            ['room_type_id' => 19, 'max_capacity' => 6, 'price' => 29200.00, 'description' => 'A bespoke urban sanctuary, designed to pamper and lift your senses. Rejuvenate in your expansive bathroom with enhanced shower facilities, and revel in the suite life with dedicated living and dining areas. A specialty night fridge rests at the entrance of the bedroom, stocked with premium mineral waters.', 'view' => 'Sea-side View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '100 sqm on average', 'layout' => '1 living room & 1 or 2 bedrooms'],
-            ['room_type_id' => 20, 'max_capacity' => 6, 'price' => 21400.00, 'description' => 'A bespoke urban sanctuary, designed to pamper and lift your senses. Rejuvenate in your expansive bathroom with enhanced shower facilities, and revel in the suite life with dedicated living and dining areas. A specialty night fridge rests at the entrance of the bedroom, stocked with premium mineral waters.', 'view' => 'City View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '100 sqm on average', 'layout' => '1 living room & 1 or 2 bedrooms'],
-            ['room_type_id' => 21, 'max_capacity' => 6, 'price' => 23200.00, 'description' => 'A bespoke urban sanctuary, designed to pamper and lift your senses. Rejuvenate in your expansive bathroom with enhanced shower facilities, and revel in the suite life with dedicated living and dining areas. A specialty night fridge rests at the entrance of the bedroom, stocked with premium mineral waters.', 'view' => 'City View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '100 sqm on average', 'layout' => '1 living room & 1 or 2 bedrooms'],
-            ['room_type_id' => 22, 'max_capacity' => 6, 'price' => 25000.00, 'description' => 'A bespoke urban sanctuary, designed to pamper and lift your senses. Rejuvenate in your expansive bathroom with enhanced shower facilities, and revel in the suite life with dedicated living and dining areas. A specialty night fridge rests at the entrance of the bedroom, stocked with premium mineral waters.', 'view' => 'Sea-side View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '100 sqm on average', 'layout' => '1 living room & 1 or 2 bedrooms'],
-            ['room_type_id' => 23, 'max_capacity' => 3, 'price' => 12000.00, 'description' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows.', 'view' => 'Garden View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '35 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 24, 'max_capacity' => 3, 'price' => 14000.00, 'description' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows.', 'view' => 'Garden View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '35 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 25, 'max_capacity' => 3, 'price' => 15800.00, 'description' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows.', 'view' => 'Garden View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '35 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 26, 'max_capacity' => 3, 'price' => 12800.00, 'description' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows.', 'view' => 'City View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '35 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 27, 'max_capacity' => 3, 'price' => 14800.00, 'description' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows.', 'view' => 'City View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '35 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 28, 'max_capacity' => 3, 'price' => 15500.00, 'description' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows.', 'view' => 'City View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '35 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 29, 'max_capacity' => 3, 'price' => 13000.00, 'description' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension.', 'view' => 'Garden View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '40 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 30, 'max_capacity' => 3, 'price' => 14200.00, 'description' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension.', 'view' => 'Garden View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '40 sqm on average', 'layout' => ''],
-            ['room_type_id' => 31, 'max_capacity' => 3, 'price' => 16800.00, 'description' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension.', 'view' => 'Garden View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '40 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 32, 'max_capacity' => 3, 'price' => 13400.00, 'description' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension.', 'view' => 'City View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '40 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 33, 'max_capacity' => 3, 'price' => 14860.00, 'description' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension.', 'view' => 'City View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '40 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 34, 'max_capacity' => 3, 'price' => 15920.00, 'description' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension.', 'view' => 'City View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '40 sqm on average', 'layout' => '1 king or 2 single beds'],
-            ['room_type_id' => 35, 'max_capacity' => 3, 'price' => 15600.00, 'description' => 'Generous in space, with a separate living area and a spa-inspired marble bathroom.', 'view' => 'City View', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '70 sqm on average', 'layout' => '1 living room & 1 bedroom'],
-            ['room_type_id' => 36, 'max_capacity' => 3, 'price' => 16800.00, 'description' => 'Generous in space, with a separate living area and a spa-inspired marble bathroom.', 'view' => 'City View', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '70 sqm on average', 'layout' => '1 living room & 1 bedroom'],
-            ['room_type_id' => 37, 'max_capacity' => 3, 'price' => 17480.00, 'description' => 'Generous in space, with a separate living area and a spa-inspired marble bathroom.', 'view' => 'City View', 'bath_amenities' => 'Jacuzzi', 'sqm' => '70 sqm on average', 'layout' => '1 living room & 1 bedroom'],
-            ['room_type_id' => 38, 'max_capacity' => 3, 'price' => 11000.00, 'description' => 'Generous in space, with a separate living area and a spa-inspired marble bathroom.', 'view' => '', 'bath_amenities' => 'Glass-enclosed shower', 'sqm' => '70 sqm on average', 'layout' => '1 living room & 1 bedroom'],
-            ['room_type_id' => 39, 'max_capacity' => 3, 'price' => 12450.00, 'description' => 'Generous in space, with a separate living area and a spa-inspired marble bathroom.', 'view' => '', 'bath_amenities' => 'Deep-soaking bathtub', 'sqm' => '70 sqm on average', 'layout' => '1 living room & 1 bedroom'],
-            ['room_type_id' => 40, 'max_capacity' => 3, 'price' => 13000.00, 'description' => 'Generous in space, with a separate living area and a spa-inspired marble bathroom.', 'view' => '', 'bath_amenities' => 'Jacuzzi', 'sqm' => '70 sqm on average', 'layout' => '1 living room & 1 bedroom'],
+            ['room_type_id' => 1,'room_name' => 'Premier Suite', 'intro_description' => 'Host intimate dinners at the 4-seater dining table. Rejuvenate your senses in the luxurious 2-person marble bathtub. Get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'description' => 'Come home to a sophisticated urban sanctuary. Host intimate dinners at the 4-seater dining table, paired with artisanal tea, international snacks and an extensive selection of wine, beer and pre-mixed cocktails from the bespoke Armoire and cocktail trolley.
+            Rejuvenate your senses in the spa-like bathroom, featuring a luxurious 2-person marble bathtub. Freshen up at the spacious separate vanities and get ready for any occasion with a walk-in wardrobe and dedicated dressing table.', 'terms_and_conditions' => 'Images and virtual tours are for illustrative purposes only. Actual room size and furniture may differ.
+            Maximum of 3 guests per room.
+            Minimum 1 adult; any combination of adults and children not exceeding 3 guests in total.
+            Charges apply from the 3rd staying adult.
+            Children who are 12 or younger sleep for free in the existing bedding of a shared room with a paying adult. Fees apply should a rollaway bed be required.
+            ^Charges apply for all the snacks, beverages and alcohol in the Armoire and cocktail trolley.'],
+            ['room_type_id' => 2 ,'room_name' => 'Family Suite', 'intro_description' => 'Travelling with the little ones is a breeze with the fully equipped kitchenette and washer. Create cherished memories and enjoy endless hours of family fun with our exclusively curated Adventure Pack.', 'description' => 'Designed with the whole family’s needs and wants in mind, the Sands Family Suite makes travelling with your little ones a breeze. Whip up meals in the spacious kitchenette, complete with a child-friendly table and flatware. Explore Singapore with our exclusively curated Adventure Pack featuring Rori, a brave little plush lion.', 'terms_and_conditions' => 'Images and virtual tour are for illustrative purposes only. Actual room size and furniture may differ.
+            Maximum of 2 adults and 2 children per room.
+            ^Except for the complimentary kid-friendly snacks and beverages, charges apply for all other snacks, beverages and alcohol in the Armoire and cocktail trolley.'],
+            ['room_type_id' => 3, 'room_name' => 'Premier Studio', 'intro_description' => 'Lounge comfortably on the plush 2-seater sofa in your elegant room and set the mood with integrated smart technology. Style your holiday outfits with ease in the generously sized walk-in wardrobe.', 'description' => 'Lounge comfortably on the plush 2-seater sofa in your elegant room, equipped with a 75” TV and integrated with smart technology. The bespoke Armoire and cocktail trolley are well-stocked with artisanal tea, international snacks and an extensive selection of wine, beer and soda, along with pre-mixed cocktails.
+            Freshen up in the spacious bathroom, fitted with a luxurious bathtub, rain shower and separate vanities for extra privacy. The generously sized walk-in wardrobe makes dressing up an indulgent affair.', 'terms_and_conditions' => 'Images and virtual tours are for illustrative purposes only. Actual room size and furniture may differ.
+            Maximum of 3 guests per room.
+            Minimum 1 adult; any combination of adults and children not exceeding 3 guests in total.
+            Charges apply from the 3rd staying adult.
+            Children who are 12 or younger sleep for free in the existing bedding of a shared room with a paying adult. Fees apply should a rollaway bed be required.
+            ^Charges apply for all the snacks, beverages and alcohol in the Armoire and cocktail trolley.'],
+            ['room_type_id' => 4, 'room_name' => 'Signature Suite', 'intro_description' => 'Stir up conversations at the Social Bar, or host dinners at the 6-seater dining table. Endless hours of entertainment await in our iconic residential-style suite, designed for nights of revelry.', 'description' => 'Feel right at home in the Sands Collection’s finest suite, designed for nights of revelry. Stir up meaningful conversations over cocktails, wines or spirits at the Social Bar, or host dinners at the 6-seater dining table. Available in 3 room variations — Pool Table, Media Room or Entertainment Den — to suit your entertainment needs.', 'terms_and_conditions' => 'Images and virtual tours are for illustrative purposes only. Actual room size and furniture may differ.
+Maximum of 3 guests per room.
+Minimum 1 adult; any combination of adults and children not exceeding 3 guests in total.
+Charges apply from the 3rd staying adult.
+Children who are 12 or younger sleep for free in the existing bedding of a shared room with a paying adult. Fees apply should a rollaway bed be required.
+^Charges apply for all the snacks, beverages and alcohol in the Armoire and cocktail trolley.
+Upon successful booking of the Sands Signature Suite, contact +65 6688 8888 to request for your desired room type, subject to availability.'],
+            ['room_type_id' => 5, 'room_name' => 'Premier Room', 'intro_description' => 'Unwind in your elegant room and savour the generous curation of treasures in the bespoke Armoire. Expect beautifully appointed in-room amenities and an expansive shower, fitted with separate vanities.', 'description' => 'Unwind in your elegant room, equipped with a 75” TV and integrated with smart technology. The bespoke Armoire and cocktail trolley are well-stocked with artisanal tea, international snacks and an extensive selection of wine, beer and soda, along with pre-mixed cocktails. Freshen up in the spacious bathroom, fitted with a luxurious bathtub, rain shower and separate vanities.', 'terms_and_conditions' => 'Images and virtual tours are for illustrative purposes only. Actual room size and furniture may differ.
+            Maximum of 3 guests per room.
+            Minimum 1 adult; any combination of adults and children not exceeding 3 guests in total.
+            Charges apply from the 3rd staying adult.
+            Children who are 12 or younger sleep for free in the existing bedding of a shared room with a paying adult. Fees apply should a rollaway bed be required.
+            ^Charges apply for all the snacks, beverages and alcohol in the Armoire and cocktail trolley.'],
+            ['room_type_id' => 6, 'room_name' => 'Deluxe Room', 'intro_description' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows.', 'descriptiont' => 'Wake up to magnificent views of Gardens by the Bay or the city in your room with floor-to-ceiling windows. Enjoy privileged access to our world-famous Infinity Pool and all the modern conveniences, while the Central Business District is right at your doorstep.', 'terms_and_conditions' => 'Images are for illustrative purposes only. Actual room size and furniture may differ.
+
+            Maximum of 3 guests per room.
+
+            Minimum 1 adult; any combination of adults and children not exceeding 3 guests in total.
+
+            Charges apply from the 3rd staying adult.
+
+            Children who are 12 or younger sleep for free in the existing bedding of a shared room with a paying adult. Fees apply should a rollaway bed be required. To request for a rollaway bed, email room.reservations@marinabaysands.com.
+
+            ^Walk-out balcony is only available in rooms facing Gardens by the Bay.'],
+            ['room_type_id' => 7, 'room_name' => 'Premier Room Classic', 'intro_description' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension', 'descriptiont' => 'Retreat into your private haven, fitted with a deep soaking bathtub to soothe away the day’s tension. Enjoy privileged access to our world-famous Infinity Pool and all the modern conveniences, while the Central Business District is right at your doorstep.', 'terms_and_conditions' => 'Images are for illustrative purposes only. Actual room size and furniture may differ.
+
+            Maximum of 3 guests per room.
+
+            Minimum 1 adult; any combination of adults and children not exceeding 3 guests in total.
+
+            Charges apply from the 3rd staying adult.
+
+            Children who are 12 or younger sleep for free in the existing bedding of a shared room with a paying adult. Fees apply should a rollaway bed be required.
+
+            ^Walk-out balcony is only available in rooms facing Gardens by the Bay.'],
+            ['room_type_id' => 8, 'room_name' => '', 'intro_description' => '', 'descriptiont' => '', 'terms_and_conditions' => ''],
         ]);
+
+        DB::table('amenities')->insert([
+            ['amenities_id' => 1, 'room_type_id' => 1, 'amenities_type' => 'Living Room', 'amenities_list' => '75 Samsung Television wiwth Yamaha Sound Bar'],
+            ['amenities_id' => 2, 'room_type_id' => 1, 'amenities_type' => 'Living Room', 'amenities_list' => 'Bespok Amrmoire & cocktail trolley'],
+            ['amenities_id' => 3, 'room_type_id' => 1, 'amenities_type' => 'Living Room', 'amenities_list' => 'Integrated smart in-room technology'],
+            ['amenities_id' => 4, 'room_type_id' => 1, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Frette bed linen'],
+            ['amenities_id' => 5, 'room_type_id' => 1, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Bang & Olufson bluetooth speaker at bedside'],
+            ['amenities_id' => 6, 'room_type_id' => 1, 'amenities_type' => 'Walk-in Wardrobe', 'amenities_list' => 'Cladded Dyson hair dryer'],
+            ['amenities_id' => 7, 'room_type_id' => 1, 'amenities_type' => 'Walk-in Wardrobe', 'amenities_list' => 'Terry bathrobe'],
+            ['amenities_id' => 8, 'room_type_id' => 1, 'amenities_type' => 'Walk-in Wardrobe', 'amenities_list' => 'Shoe shine'],
+            ['amenities_id' => 9, 'room_type_id' => 1, 'amenities_type' => 'Bathroom', 'amenities_list' => '2-person marble bathtub'],
+            ['amenities_id' => 10, 'room_type_id' => 1, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Rain shower, handheld shower, bench'],
+            ['amenities_id' => 11, 'room_type_id' => 1, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Separate bathroom vanities'],
+            ['amenities_id' => 12, 'room_type_id' => 1, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Rivolta Carmignani terry'],
+            ['amenities_id' => 13, 'room_type_id' => 1, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Bvlgari bath amenities'],
+            ['amenities_id' => 14, 'room_type_id' => 1, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '95 sqm on average'],
+            ['amenities_id' => 15, 'room_type_id' => 1, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Up to 3 guests'],
+            ['amenities_id' => 16, 'room_type_id' => 1, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '1 king bed / 2 queen beds'],
+            ['amenities_id' => 17, 'room_type_id' => 2, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '75 – 95 sqm on average'],
+            ['amenities_id' => 18, 'room_type_id' => 2, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Up to 4 guests'],
+            ['amenities_id' => 19, 'room_type_id' => 2, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '2 bedrooms'],
+            ['amenities_id' => 20, 'room_type_id' => 2, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Sofa bed in the living room, bunk beds in kids’ room & king bed in bedroom'],
+            ['amenities_id' => 21, 'room_type_id' => 2, 'amenities_type' => 'Living Room', 'amenities_list' => '75’’ Samsung Television with Yamaha Sound Bar'],
+            ['amenities_id' => 22, 'room_type_id' => 2, 'amenities_type' => 'Living Room', 'amenities_list' => 'Kitchenette with child-friendly table and flatware'],
+            ['amenities_id' => 23, 'room_type_id' => 2, 'amenities_type' => 'Living Room', 'amenities_list' => 'Integrated smart in-room technology'],
+            ['amenities_id' => 24, 'room_type_id' => 2, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Frette bed linen'],
+            ['amenities_id' => 25, 'room_type_id' => 2, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Bang & Olufson bluetooth speaker at bedside'],
+            ['amenities_id' => 26, 'room_type_id' => 2, 'amenities_type' => 'Kids Room', 'amenities_list' => 'Nintendo Switch and Apple TV'],
+            ['amenities_id' => 27, 'room_type_id' => 2, 'amenities_type' => 'Kids Room', 'amenities_list' => 'Kid-sized robes, slippers, hooded towels'],
+            ['amenities_id' => 28, 'room_type_id' => 2, 'amenities_type' => 'Kids Room', 'amenities_list' => 'Curated Adventure Pack'],
+            ['amenities_id' => 29, 'room_type_id' => 2, 'amenities_type' => 'Bathroom', 'amenities_list' => '2-person bathtub'],
+            ['amenities_id' => 30, 'room_type_id' => 2, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Rain shower, handheld shower, bench'],
+            ['amenities_id' => 31, 'room_type_id' => 2, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Kid-friendly bath essentials'],
+            ['amenities_id' => 32, 'room_type_id' => 2, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Diaper bin'],
+            ['amenities_id' => 33, 'room_type_id' => 2, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Bvlgari bath amenities'],
+            ['amenities_id' => 34, 'room_type_id' => 3, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '70 sqm on average'],
+            ['amenities_id' => 35, 'room_type_id' => 3, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Up to 3 guests'],
+            ['amenities_id' => 36, 'room_type_id' => 3, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '1 king bed'],
+            ['amenities_id' => 37, 'room_type_id' => 3, 'amenities_type' => 'Bedroom', 'amenities_list' => ''],
+            ['amenities_id' => 38, 'room_type_id' => 3, 'amenities_type' => 'Living Room', 'amenities_list' => 'Frette bed linen'],
+            ['amenities_id' => 39, 'room_type_id' => 3, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Integrated smart in-room technology'],
+            ['amenities_id' => 40, 'room_type_id' => 3, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Bang & Olufson bluetooth speaker at bedside'],
+            ['amenities_id' => 41, 'room_type_id' => 3, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Rain Shower, handheld shower, bench'],
+            ['amenities_id' => 42, 'room_type_id' => 3, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Separate bathroom vanities'],
+            ['amenities_id' => 43, 'room_type_id' => 3, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Rivolta Carmignani terry'],
+            ['amenities_id' => 44, 'room_type_id' => 3, 'amenities_type' => 'Bathroom', 'amenities_list' => 'Salvatore Ferragamo bath amenities'],
+            ['amenities_id' => 45, 'room_type_id' => 4, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '140 sqm on average'],
+            ['amenities_id' => 46, 'room_type_id' => 4, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Up to 3 guests'],
+            ['amenities_id' => 47, 'room_type_id' => 4, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '1 bedroom with king bed'],
+            ['amenities_id' => 48, 'room_type_id' => 4, 'amenities_type' => 'Living Room', 'amenities_list' => '85’’ Samsung Television with Yamaha Sound Bar'],
+            ['amenities_id' => 49, 'room_type_id' => 4, 'amenities_type' => 'Living Room', 'amenities_list' => 'Bespoke Armoire & cocktail trolley^'],
+            ['amenities_id' => 50, 'room_type_id' => 4, 'amenities_type' => 'Living Room', 'amenities_list' => 'Integrated smart in-room technology'],
+            ['amenities_id' => 51, 'room_type_id' => 4, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Frette bed linen'],
+            ['amenities_id' => 52, 'room_type_id' => 4, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Bang & Olufson bluetooth speaker at bedside'],
+            ['amenities_id' => 53, 'room_type_id' => 4, 'amenities_type' => 'Walk-in Wardrobe', 'amenities_list' => 'Cladded Dyson hair dryer'],
+            ['amenities_id' => 54, 'room_type_id' => 4, 'amenities_type' => 'Living Room', 'amenities_list' => 'Terry bathrobe'],
+            ['amenities_id' => 55, 'room_type_id' => 4, 'amenities_type' => 'Living Room', 'amenities_list' => 'Shoe shine'],
+            ['amenities_id' => 56, 'room_type_id' => 4, 'amenities_type' => 'Bathroom', 'amenities_list' => '2-person marble bathtub'],
+            ['amenities_id' => 57, 'room_type_id' => 4, 'amenities_type' => 'Bathrom', 'amenities_list' => 'Rain shower, handheld shower, bench'],
+            ['amenities_id' => 58, 'room_type_id' => 4, 'amenities_type' => 'Bathrom', 'amenities_list' => 'Separate bathroom vanities'],
+            ['amenities_id' => 59, 'room_type_id' => 4, 'amenities_type' => 'Bathrom', 'amenities_list' => 'Rivolta Carmignani terry'],
+            ['amenities_id' => 60, 'room_type_id' => 4, 'amenities_type' => 'Bathrom', 'amenities_list' => 'Bvlgari bath amenities'],
+            ['amenities_id' => 61, 'room_type_id' => 5, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Frette bed linen'],
+            ['amenities_id' => 62, 'room_type_id' => 5, 'amenities_type' => 'Bedroom', 'amenities_list' => 'Bang & Olufson bluetooth speaker at bedside'],
+            ['amenities_id' => 63, 'room_type_id' => 5, 'amenities_type' => 'Living Room', 'amenities_list' => 'Integrated smart in-room technology'],
+            ['amenities_id' => 64, 'room_type_id' => 5, 'amenities_type' => 'bathroom', 'amenities_list' => 'Rain Shower, handheld shower, bench'],
+            ['amenities_id' => 65, 'room_type_id' => 5, 'amenities_type' => 'bathroom', 'amenities_list' => 'Separate bathroom vanities'],
+            ['amenities_id' => 66, 'room_type_id' => 5, 'amenities_type' => 'bathroom', 'amenities_list' => 'Rivolta Carmignani terry'],
+            ['amenities_id' => 67, 'room_type_id' => 5, 'amenities_type' => 'bathroom', 'amenities_list' => 'Salvatore Ferragamo bath amenities'],
+            ['amenities_id' => 68, 'room_type_id' => 6, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '35 sqm on average'],
+            ['amenities_id' => 69, 'room_type_id' => 6, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Up to 3 guests'],
+            ['amenities_id' => 70, 'room_type_id' => 6, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '1 king bed / 2 twin beds'],
+            ['amenities_id' => 71, 'room_type_id' => 6, 'amenities_type' => 'Living Room', 'amenities_list' => 'Executive work desk'],
+            ['amenities_id' => 72, 'room_type_id' => 6, 'amenities_type' => 'Living Room', 'amenities_list' => 'Interactive flatscreen TV with cable channels'],
+            ['amenities_id' => 73, 'room_type_id' => 6, 'amenities_type' => 'Living Room', 'amenities_list' => 'Bathroom with glass-enclosed shower'],
+            ['amenities_id' => 74, 'room_type_id' => 6, 'amenities_type' => 'Living Room', 'amenities_list' => 'Luxury bathroom amenities'],
+            ['amenities_id' => 75, 'room_type_id' => 7, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '40 sqm on average'],
+            ['amenities_id' => 76, 'room_type_id' => 7, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Up to 3 guests'],
+            ['amenities_id' => 77, 'room_type_id' => 7, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '1 king bed / 2 queen beds '],
+            ['amenities_id' => 78, 'room_type_id' => 7, 'amenities_type' => 'Living Room', 'amenities_list' => 'Executive work desk'],
+            ['amenities_id' => 79, 'room_type_id' => 7, 'amenities_type' => 'Living Room', 'amenities_list' => 'Interactive flatscreen TV with cable channels'],
+            ['amenities_id' => 80, 'room_type_id' => 7, 'amenities_type' => 'Living Room', 'amenities_list' => 'Luxury bathroom amenities'],
+            ['amenities_id' => 81, 'room_type_id' => 5, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '35 sqm on average'],
+            ['amenities_id' => 82, 'room_type_id' => 5, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => 'Up to 3 guests'],
+            ['amenities_id' => 83, 'room_type_id' => 5, 'amenities_type' => 'Size & Occupancy', 'amenities_list' => '1 king bed / 2 twin beds'],
+        ]);
+
+        DB::table('key_features')->insert([
+            ['key_feature_id' => 1,'room_type_id' => 1, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705663009/Room/sands-premier-suite/KEY%20FEATURES/key-feature-living-room_ugeaij.jpg', 'key_feature_description' => 'Separate living room with 75’’ Samsung Television and Yamaha Sound Bar'],
+            ['key_feature_id' => 2,'room_type_id' => 1, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705663007/Room/sands-premier-suite/KEY%20FEATURES/key-feature-dining_dztbta.jpg', 'key_feature_description' => '4-seater dining table'],
+            ['key_feature_id' => 3,'room_type_id' => 1, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705663011/Room/sands-premier-suite/KEY%20FEATURES/key-feature-wardrobe_wn1fu2.jpg', 'key_feature_description' => 'Walk-in wardrobe'],
+            ['key_feature_id' => 4,'room_type_id' => 2, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665234/Room/sands-premier-family-suite/KEY%20FEATURES/key-feature-living-room_wous8y.jpg', 'key_feature_description' => 'Living room with kitchenette'],
+            ['key_feature_id' => 5,'room_type_id' => 2, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665218/Room/sands-premier-family-suite/KEY%20FEATURES/key-feature-bunk-bed_a9g7np.jpg', 'key_feature_description' => 'Kids’ room with bunk beds'],
+            ['key_feature_id' => 6,'room_type_id' => 2, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665221/Room/sands-premier-family-suite/KEY%20FEATURES/key-feature-toddler-chair_q9mnol.jpg', 'key_feature_description' => 'Toddler-friendly high chair'],
+            ['key_feature_id' => 7,'room_type_id' => 3, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666555/Room/sands-premier-studio/Key%20features/key-feature-armoire_tljpmn.jpg', 'key_feature_description' => 'Bespoke Armoire & cocktail trolley^'],
+            ['key_feature_id' => 8,'room_type_id' => 3, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666559/Room/sands-premier-studio/Key%20features/key-feature-tv_tfhrl0.jpg', 'key_feature_description' => '75’’ Samsung television with Yamaha sound bar'],
+            ['key_feature_id' => 9,'room_type_id' => 3, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666552/Room/sands-premier-studio/Key%20features/key-feature-bathtub_b6dnrw.jpg', 'key_feature_description' => '2-person bathtub'],
+            ['key_feature_id' => 10,'room_type_id' => 4, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667833/Room/sands-premier-signature/SUITE%20TYPES/suite-type-pool-table_qw8swx.jpg', 'key_feature_description' => 'Pool Table'],
+            ['key_feature_id' => 11,'room_type_id' => 4, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667830/Room/sands-premier-signature/SUITE%20TYPES/suite-type-media-room_gfxhkt.jpg', 'key_feature_description' => 'Media Room'],
+            ['key_feature_id' => 12,'room_type_id' => 4, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667828/Room/sands-premier-signature/SUITE%20TYPES/suite-type-entertainment-den_tzmhpl.jpg', 'key_feature_description' => 'Entertainment Den'],
+            ['key_feature_id' => 13,'room_type_id' => 5, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705669106/Room/sands-premier-room/PREMIER%20KEY/key-feature-armoire_cb7yca.jpg', 'key_feature_description' => 'Bespoke Armoire & cocktail trolley^'],
+            ['key_feature_id' => 14,'room_type_id' => 5, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705669112/Room/sands-premier-room/PREMIER%20KEY/key-feature-tv_mxje2d.jpg', 'key_feature_description' => '75’’ Samsung television with Yamaha sound bar'],
+            ['key_feature_id' => 15,'room_type_id' => 5, 'key_feature_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705669110/Room/sands-premier-room/PREMIER%20KEY/key-feature-bath_tslkde.jpg', 'key_feature_description' => '2-person bathtub'],
+            ['key_feature_id' => 16,'room_type_id' => 6, 'key_feature_picture' => '', 'key_feature_description' => 'Expansive views of the city or Gardens by the Bay'],
+            ['key_feature_id' => 17,'room_type_id' => 6, 'key_feature_picture' => '', 'key_feature_description' => 'Walk-out balcony^'],
+            ['key_feature_id' => 18,'room_type_id' => 7, 'key_feature_picture' => '', 'key_feature_description' => 'Spacious bathroom with glass-enclosed shower & deep soaking bathtub'],
+            ['key_feature_id' => 19,'room_type_id' => 7, 'key_feature_picture' => '', 'key_feature_description' => 'Expansive views of the city or Gardens by the Bay'],
+            ['key_feature_id' => 20,'room_type_id' => 7, 'key_feature_picture' => '', 'key_feature_description' => 'Walk-out balcony^'],
+        ]);
+
+        DB::table('room_gallaries')->insert([
+            ['room_gallary_id' => 1, 'room_type_id' => '1', 'view' => 'Garden view', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705662996/Room/sands-premier-suite/sands-premier-suite_2_e6mmou.jpg'],
+            ['room_gallary_id' => 2, 'room_type_id' => '1',  'view' => 'Garden view', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705662995/Room/sands-premier-suite/sands-premier-suite_1_tu4ahl.jpg'],
+            ['room_gallary_id' => 3, 'room_type_id' => '1', 'view' => 'All',  'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705662998/Room/sands-premier-suite/sands-premier-suite_3_c2dleo.jpg'],
+            ['room_gallary_id' => 4, 'room_type_id' => '1', 'view' => 'All',  'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705663005/Room/sands-premier-suite/sands-premier-suite_7_agfgr7.jpg'],
+            ['room_gallary_id' => 5, 'room_type_id' => '1', 'view' => 'All',  'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705663003/Room/sands-premier-suite/sands-premier-suite_6_wntczx.jpg'],
+            ['room_gallary_id' => 6, 'room_type_id' => '1', 'view' => 'All',  'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705663001/Room/sands-premier-suite/sands-premier-suite_5_w5uyi4.jpg'],
+            ['room_gallary_id' => 7, 'room_type_id' => '1', 'view' => 'All', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705662999/Room/sands-premier-suite/sands-premier-suite_4_hhoi5c.jpg'],
+            ['room_gallary_id' => 8, 'room_type_id' => '2', 'view' => 'Garden View','room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665232/Room/sands-premier-family-suite/sands-premier-family-suite_7_jluisy.jpg'],
+            ['room_gallary_id' => 9, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665229/Room/sands-premier-family-suite/sands-premier-family-suite_6_nexbcb.jpg'],
+            ['room_gallary_id' => 10, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665227/Room/sands-premier-family-suite/sands-premier-family-suite_10_xdjat4.jpg'],
+            ['room_gallary_id' => 11, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665225/Room/sands-premier-family-suite/sands-premier-family-suite_2_vf0rkn.jpg'],
+            ['room_gallary_id' => 12, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665223/Room/sands-premier-family-suite/sands-premier-family-suite_9_plyutz.jpg'],
+            ['room_gallary_id' => 13, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665216/Room/sands-premier-family-suite/sands-premier-family-suite_8_km5yki.jpg'],
+            ['room_gallary_id' => 14, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665214/Room/sands-premier-family-suite/sands-premier-family-suite_5_f2rslx.jpg'],
+            ['room_gallary_id' => 15, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665212/Room/sands-premier-family-suite/sands-premier-family-suite_4_qe9sxa.jpg'],
+            ['room_gallary_id' => 16, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665210/Room/sands-premier-family-suite/sands-premier-family-suite_3_cvxzom.jpg'],
+            ['room_gallary_id' => 17, 'room_type_id' => '2','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705665208/Room/sands-premier-family-suite/sands-premier-family-suite_1_debeqa.jpg'],
+            ['room_gallary_id' => 18, 'room_type_id' => '3', 'view' => 'Garden View','room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666550/Room/sands-premier-studio/sands-premier-studio_1_hdtmob.jpg'],
+            ['room_gallary_id' => 19, 'room_type_id' => '3', 'view' => 'City View','room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666529/Room/sands-premier-studio/sands-premier-studio_2_r2zph8.jpg'],
+            ['room_gallary_id' => 20, 'room_type_id' => '3', 'view' => 'All','room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666547/Room/sands-premier-studio/sands-premier-studio_9_ri047b.jpg'],
+            ['room_gallary_id' => 21, 'room_type_id' => '3', 'view' => 'All','room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666544/Room/sands-premier-studio/sands-premier-studio_8_j4sgzw.jpg'],
+            ['room_gallary_id' => 22, 'room_type_id' => '3', 'view' => 'All','room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666542/Room/sands-premier-studio/sands-premier-studio_7_e3rode.jpg'],
+            ['room_gallary_id' => 23, 'room_type_id' => '3', 'view' => 'All','room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666539/Room/sands-premier-studio/sands-premier-studio_6_g2g523.jpg'],
+            ['room_gallary_id' => 24, 'room_type_id' => '3', 'view' => 'All', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666534/Room/sands-premier-studio/sands-premier-studio_4_ifcooh.jpg'],
+            ['room_gallary_id' => 25, 'room_type_id' => '3','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705666530/Room/sands-premier-studio/sands-premier-studio_3_dym7dz.jpg'],
+            ['room_gallary_id' => 26, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667814/Room/sands-premier-signature/sands-premier-signature_11_kycyp1.jpg'],
+            ['room_gallary_id' => 27, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667825/Room/sands-premier-signature/sands-premier-signature_9_jvry6i.jpg'],
+            ['room_gallary_id' => 28, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667822/Room/sands-premier-signature/sands-premier-signature_8_kwnnxv.jpg'],
+            ['room_gallary_id' => 29, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667819/Room/sands-premier-signature/sands-premier-signature_12_sqjmlj.jpg'],
+            ['room_gallary_id' => 30, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667817/Room/sands-premier-signature/sands-premier-signature_6_xrajng.jpg'],
+            ['room_gallary_id' => 31, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667812/Room/sands-premier-signature/sands-premier-signature_10_bwkegx.jpg'],
+            ['room_gallary_id' => 32, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667809/Room/sands-premier-signature/sands-premier-signature_4_ns7amf.jpg'],
+            ['room_gallary_id' => 33, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667806/Room/sands-premier-signature/sands-premier-signature_1_gjr4h2.jpg'],
+            ['room_gallary_id' => 34, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667804/Room/sands-premier-signature/sands-premier-signature_13_veuebz.jpg'],
+            ['room_gallary_id' => 35, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667801/Room/sands-premier-signature/sands-premier-signature_7_auq9cv.jpg'],
+            ['room_gallary_id' => 36, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667804/Room/sands-premier-signature/sands-premier-signature_13_veuebz.jpg'],
+            ['room_gallary_id' => 37, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667796/Room/sands-premier-signature/sands-premier-signature_3_gndun7.jpg'],
+            ['room_gallary_id' => 38, 'room_type_id' => '4','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705667795/Room/sands-premier-signature/sands-premier-signature_2_nh6trw.jpg'],
+            ['room_gallary_id' => 39, 'room_type_id' => '5','view' => 'City View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705669101/Room/sands-premier-room/sands-premier-rooom_4_mukthe.jpg'],
+            ['room_gallary_id' => 40, 'room_type_id' => '5','view' => 'City View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705670750/Room/sands-premier-room/cityview-1920x843_tunyii.jpg'],
+            ['room_gallary_id' => 41, 'room_type_id' => '5','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705669103/Room/sands-premier-room/sands-premier-rooom_1_jukv2o.jpg'],
+            ['room_gallary_id' => 42, 'room_type_id' => '5','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705669099/Room/sands-premier-room/sands-premier-rooom_3_rkahip.jpg'],
+            ['room_gallary_id' => 43, 'room_type_id' => '6','view' => 'City View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671220/Room/deluxe%20room%20m/cityview-bedroom-1920x843_fa1x6m.jpg'],
+            ['room_gallary_id' => 44, 'room_type_id' => '6','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671212/Room/deluxe%20room%20m/masthead_e6riou.jpg'],
+            ['room_gallary_id' => 45, 'room_type_id' => '6','view' => 'All', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671217/Room/deluxe%20room%20m/deluxe-room-gallery-2-1920x1080_f0irek.jpg'],
+            ['room_gallary_id' => 46, 'room_type_id' => '6','view' => 'All', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671214/Room/deluxe%20room%20m/deluxe-room-bathroom-1920x1080_ygwesn.jpg'],
+            ['room_gallary_id' => 47, 'room_type_id' => '7','view' => 'Garden View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671561/Room/premier%20Room%20Classic/premier-room-gallery-2-1920x1080_o7fzob.jpg'],
+            ['room_gallary_id' => 48, 'room_type_id' => '7','view' => 'City View', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671553/Room/premier%20Room%20Classic/masthead_dingbg.jpg'],
+            ['room_gallary_id' => 49, 'room_type_id' => '7','view' => 'All', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671555/Room/premier%20Room%20Classic/premier-room-gallery-1-1920x1080_wlkdrl.jpg'],
+            ['room_gallary_id' => 50, 'room_type_id' => '7','view' => 'All', 'room_picture' => 'https://res.cloudinary.com/dk0ystu6k/image/upload/v1705671557/Room/premier%20Room%20Classic/premier-room-bathroom-1920x1080_ljvfba.jpg'],
+            ]);
 
         $restaurants = [
             [
@@ -355,5 +531,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $room = Room::factory(150)->create();
+
+
     }
 }

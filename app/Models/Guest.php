@@ -27,7 +27,10 @@ class Guest extends Model implements Authenticatable
         'last_name',
         'email',
         'password',
-        'address'
     ];
 
+    public function guestInformation()
+    {
+        return $this->hasOne(GuestInformation::class, 'guest_id', 'guest_id');
+    }
 }

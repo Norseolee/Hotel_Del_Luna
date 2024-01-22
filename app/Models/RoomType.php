@@ -10,15 +10,10 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class RoomType
- * 
+ *
  * @property int $room_type_id
- * @property int $max_capacity
- * @property float $price
  * @property string|null $description
- * @property string $view
- * @property string $bath_amenitites
- * @property string $sqm
- * @property string $layout
+ * @property string $intro_description
  *
  * @package App\Models
  */
@@ -28,23 +23,31 @@ class RoomType extends Model
 	protected $primaryKey = 'room_type_id';
 	public $timestamps = false;
 
-	protected $casts = [
-		'max_capacity' => 'int',
-		'price' => 'float'
-	];
-
 	protected $fillable = [
-		'max_capacity',
-		'price',
+		'room_name',
+		'intro_description',
 		'description',
-		'view',
-		'bath_amenitites',
-		'sqm',
-		'layout'
+		'terms_and_condition',
+
 	];
 
 	public function room()
     {
         return $this->belongsTo(Room::class);
+    }
+
+    public function amenities()
+    {
+        return $this->hasMany(Amenity::class, 'room_type_id');
+    }
+
+    public function keyFeatures()
+    {
+        return $this->hasMany(KeyFeature::class, 'room_type_id');
+    }
+
+    public function roomGallery()
+    {
+        return $this->hasMany(RoomGallary::class, 'room_type_id');
     }
 }

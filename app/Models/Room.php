@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Room
- * 
+ *
  * @property int $room_id
  * @property int $room_number
  * @property string|null $room_name

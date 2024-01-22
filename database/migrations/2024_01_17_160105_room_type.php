@@ -13,13 +13,10 @@ return new class extends Migration
     {
         Schema::create('room_types', function (Blueprint $table) {
             $table->id('room_type_id');
-            $table->integer('max_capacity');
-            $table->float('price');
-            $table->text('description')->nullable();
-            $table->string('view');
-            $table->text('bath_amenities');
-            $table->string('sqm');
-            $table->string('layout');
+         $table->string('room_name', 100);
+         $table->string('intro_description', 900);
+         $table->string('description', 900);
+$table->string('terms_and_conditions', 900);
         });
     }
 

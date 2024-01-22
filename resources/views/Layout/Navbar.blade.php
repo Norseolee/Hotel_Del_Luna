@@ -38,7 +38,7 @@
         </div>
         @endif
         <i class="pipe">|</i>
-        <a class="book_now" href="">Book Now!</a>
+        <a class="book_now" href="/Rooms">Book Now!</a>
     </div>
     <div class="toggle" data-aos="fade-left" data-aos-duration="800">
         <div class="toggle_btn">

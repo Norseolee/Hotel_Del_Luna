@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create("room_gallaries", function (Blueprint $table) {
-            $table->bigIncrements("room_gallary_id");
+        Schema::create("key_features", function (Blueprint $table) {
+            $table->bigIncrements("key_feature_id");
             $table->unsignedBigInteger("room_type_id");
-            $table->string('view', 255);
-            $table->string('room_picture', 255);
+            $table->string('key_feature_picture', 400);
+            $table->string('key_feature_description', 255);
         });
     }
 

@@ -26,11 +26,9 @@
                 <div class="single-box">
                     <h2>STAY</h2>
                     <ul>
-                        <li><a href="/Rooms">DELUXE ROOM</a></li>
-                        <li><a href="/Rooms">SANDS FAMILY SUITE</a></li>
-                        <li><a href="/Rooms">PAIZA PERMIER SUITE</a></li>
-                        <li><a href="/Rooms">ORCHID SUITE</a></li>
-                        <li><a href="/Rooms">PREMIER ROOM</a></li>
+                        @foreach($room_footer as $room)
+                        <li style="text-transform: UPPERCASE;"><a href="/Room/{{ $room->room_type_id }}">{{ $room->room_name }}</a></li>
+                        @endforeach
                     </ul>
                     <h2 class="pt-4">SHOP</h2>
                     <ul>

@@ -1,140 +1,64 @@
-
-
-.font_color {
-    color: var(--buttonColorHover);
-}
-
 .hero {
     background-image: url("https://res.cloudinary.com/dk0ystu6k/image/upload/v1705313967/room_fujo5c.jpg") !important;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     min-height: 300px;
-    height: 762px;
+    height: 100vh;
 }
 
-.book {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+.gold {
+    color: var(--gold);
+}
+.intro {
     background-color: var(--MainBlue);
-    width: 80%;
-
-    margin-top: -100px;
-    margin-inline: auto;
-    color: white;
-
-    z-index: 1;
+    color: var(--white);
+    padding: 50px;
 }
-
-.view {
-    display: flex;
-}
-
-.select_view {
-    border: none;
-    flex-grow: 1;
-    outline: none;
-
-    padding-block: 10px;
-}
-.select_view:focus {
-    outline: none;
-}
-
-.select_room {
-    display: none;
-}
-
 .room {
-    padding: 30px 20px;
+   margin-inline: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-}
+    gap: 80px 20px;
 
-.room > * {
-    flex-grow: 1;
 }
-
-.Tab-button-active {
-    background-color: var(--buttonColor);
-    color: black;
-}
-
-.select_room div > input {
-    width: 150px;
-    height: 50px;
-    padding-left: 10px;
-    border: 2px solid var(--blueHover);
-    border-radius: 4px;
-    color: var(--blueHover);
-}
-
-.select_room div > input:focus {
-    outline-color: var(--buttonColorHover);
-}
-
-.select_room div > * {
-    display: flex;
-    column-gap: 20px;
-}
-
-.Tab-content-active {
-    display: block;
-}
-
-.btn {
-    background-color: var(--buttonColor);
-    border: 1px transparent;
-    border-radius: 5px;
-    padding: 10px 40px;
-    transition: background-color 0.5s;
-}
-
-.btn:hover {
-    background-color: var(--buttonColorHover);
-}
-
-.availablity_btn {
-    display: flex;
-    background-color: pink;
-    justify-content: stretch;
-}
-
-.availablity {
-    border: none;
-    background-color: var(--buttonColor);
-    border: 1px transparent;
-    border-radius: 5px;
-    padding-block: 20px;
-    width: 100%;
-    transition: background-color 0.5s;
-}
-.availablity:hover {
-    background-color: var(--buttonColorHover);
-}
-.availablity:focus {
-    outline: none;
-}
-.gold {
-    color: var(--buttonColorHover);
-}
-
-.Room_Suite_City {
-    margin-block: 50px;
-    text-align: center;
-    display: flex;
-    gap: 20px;
-}
-
-.card-body {
+.room_card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+   justify-content: space-between;
+    width: 500px;
 }
+
+.image {
+    width: min(100%, 500px);
+    height: min(100%, 300px);
+    overflow: hidden;
+}
+
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.room_description {
+    font-size: 13px;
+    padding-right: 30px;
+}
+.room-amenities {
+    display: flex;
+    width: 100%;
+    font-size: 13px;
+}
+
+.Btn {
+    border: none;
+    color: var(--gold);
+    background-color: white;
+    outline: none;
+}
+
 
 .gallery-image {
     padding: 20px;
@@ -164,15 +88,6 @@
 
 .img-box:hover img {
     transform: scale(1.1);
-}
-
-.img-box:hover .transparent-box {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.img-box:hover .caption {
-    transform: translateY(-20px);
-    opacity: 1;
 }
 
 .img-box:hover {

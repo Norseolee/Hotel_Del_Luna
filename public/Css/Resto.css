@@ -7,20 +7,26 @@
     width: 100%;
     object-fit: cover;
 }
-
+.resto-title {
+    background-color: var(--MainBlue);
+    padding: 40px;
+}
+.resto_information {
+    background-color: var(--white);
+    padding: 10px;
+}
 .resto-title > * {
     text-align: center;
     text-transform: uppercase;
     color: var(--gold);
-    margin: 40px;
 }
 .resto-description {
     text-align: center;
-    margin: 100px 60px;
+    padding: 50px 200px;
     color: var(--colorfonts);
 }
 .resto-details h3 {
-    margin: 50px;
+    margin: 20px;
     text-align: center;
     color: var(--gold);
 }
@@ -35,9 +41,9 @@
 
     width: 300px;
 }
-.location h3,
-.restaurant-contact h3,
-.restaurant-operating-hrs h3 {
+.location h4,
+.restaurant-contact h4,
+.restaurant-operating-hrs h4 {
     color: var(--gold);
 }
 .location p,

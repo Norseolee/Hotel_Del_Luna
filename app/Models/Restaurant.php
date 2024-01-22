@@ -11,11 +11,11 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Restaurant
- * 
+ *
  * @property int $restaurant_id
  * @property string $restaurant_name
- * @property Carbon|null $time_open
- * @property Carbon|null $time_close
+ * @property string|null $time_open
+ * @property string|null $time_close
  * @property string|null $restaurant_type
  * @property string|null $contact_email
  * @property string|null $contact_number
@@ -30,11 +30,6 @@ class Restaurant extends Model
 	protected $table = 'restaurants';
 	protected $primaryKey = 'restaurant_id';
 	public $timestamps = false;
-
-	protected $casts = [
-		'time_open' => 'datetime',
-		'time_close' => 'datetime'
-	];
 
 	protected $fillable = [
 		'restaurant_name',

@@ -10,8 +10,7 @@
     <header>
         @include('Layout.Navbar')
         <div class="hero" data-aos="fade-down" data-aos-duration="1000">
-            <img src="{{ $restaurant->picture }}"
-                alt="{{$restaurant->restaurant_name}} picture">
+            <img src="{{ $restaurant->picture }}" alt="{{$restaurant->restaurant_name}} picture">
         </div>
     </header>
 
@@ -24,63 +23,56 @@
         <p>{{$restaurant->description}}</p>
     </div>
 
-    <div class="resto-details">
-        <h3>RESTAURANT DETAILS</h3>
-    </div>
-    <div class="restaurant-details">
-        <div class="location">
-            <h3>LOCATION</h3>
-            <p>{{$restaurant->location}}</p>
+    <div class="resto_information">
+        <div class="resto-details">
+            <h3>RESTAURANT DETAILS</h3>
         </div>
+        <div class="restaurant-details">
+            <div class="location">
+                <h4>LOCATION</h3>
+                    <p>{{$restaurant->location}}</p>
+            </div>
 
+            @if ($restaurant->time_open !== null && $restaurant->time_close !== null)
+            <div class="restaurant-operating-hrs">
+                <h4>OPERATING HOURS</h3>
 
-        @if ($restaurant->time_open !== null && $restaurant->time_close !== null)
-        <div class="restaurant-operating-hrs">
-            <h3>OPERATING HOURS</h3>
+                    @php
+                    $timeopen = $restaurant->time_open;
+                    $timeclose = $restaurant->time_close;
 
-            @php
-            $change = 'AM';
-            $timeopen = $restaurant->time_open;
+                    // Assuming the time format is "h:i A"
+                    $timeopenString = date("h:i A", strtotime($timeopen));
+                    $timecloseString = date("h:i A", strtotime($timeclose));
+                    @endphp
 
-            if ($timeopen instanceof \Carbon\Carbon) {
-            $timeopenString = $timeopen->format('H:i');
-
-            if ($timeopenString > '12:00') {
-            $change = 'PM';
-            }
-            }
-            @endphp
-
-            <p>{{ $timeopenString }} <span class="change">{{ $change }}</span> - {{
-                $restaurant->time_close->format('H:i') }} PM</p>
-        </div>
-        @endif
-
-
-        @if ($restaurant->contact_email !== null || $restaurant->contact_number !== null)
-        <div class="restaurant-contact">
-            <h3>CONTACT US</h3>
-            @if ($restaurant->contact_email !== null)
-            <div class="resto-email">
-                <p>{{$restaurant->contact_email}}</p>
+                    <p>{{ $timeopenString }} - {{ $timecloseString }}</p>
             </div>
             @endif
-            @if ($restaurant->contact_number !== null)
-            <div class="resto-email">
-                <p>{{$restaurant->contact_number}}</p>
+
+            @if ($restaurant->contact_email !== null || $restaurant->contact_number !== null)
+            <div class="restaurant-contact">
+                <h4>CONTACT US</h3>
+                    @if ($restaurant->contact_email !== null)
+                    <div class="resto-email">
+                        <p>{{$restaurant->contact_email}}</p>
+                    </div>
+                    @endif
+                    @if ($restaurant->contact_number !== null)
+                    <div class="resto-email">
+                        <p>{{$restaurant->contact_number}}</p>
+                    </div>
+                    @endif
             </div>
             @endif
         </div>
-        @endif
     </div>
-
 
     <div class="gallery-container">
         @foreach ($restaurant_gallery as $gallery)
         @if ($gallery->restaurant_id == $restaurant->restaurant_id)
         <div class="gallery-item">
-            <img src="{{ $gallery->picture }}" alt="Gallery Image"
-                onclick="openLightbox('{{ $gallery->picture }}')">
+            <img src="{{ $gallery->picture }}" alt="Gallery Image" onclick="openLightbox('{{ $gallery->picture }}')">
         </div>
         @endif
         @endforeach
@@ -94,25 +86,18 @@
         function openLightbox(imageUrl) {
             var lightboxContainer = document.getElementById('lightbox-container');
             var lightboxImage = document.getElementById('lightbox-image');
-    
+
             lightboxImage.src = imageUrl;
             lightboxContainer.style.display = 'flex';
         }
-    
+
         function closeLightbox() {
             var lightboxContainer = document.getElementById('lightbox-container');
             lightboxContainer.style.display = 'none';
         }
+
     </script>
     </div>
-
-
-
-
-
-
-
-
 
     @include('Layout.Footer')
     @include('Layout.aos')

@@ -1,0 +1,119 @@
+.hero {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.hero > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.title_description {
+    background-color: var(--MainBlue);
+    color: var(--white);
+    padding: 80px 50px;
+}
+.gold {
+    color: var(--gold);
+    text-transform: uppercase;
+}
+.key_feature {
+    padding-top: 50px;
+}
+.key_features_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    gap: 20px;
+
+    padding-inline: 30px;
+}
+.key_features_card img {
+    width: min(100%, 500px);
+}
+.amenities {
+    display: flex;
+    justify-content: space-between;
+    padding:  20px 50px;
+    gap: 20px;
+}
+.amenities > section {
+    width: min(100%, 500px);
+}
+#modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+#modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 10000;
+}
+.Btn_reserve {
+    border: none;
+    background-color: var(--gold);
+    padding: 10px 50px;
+}
+.Btn {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: var(--gold);
+    background-color: transparent;
+    padding-right: 30px;
+    border-bottom: 1px solid var(--gold);
+}
+.Btn:focus {
+    outline: none;
+}
+.terms_condition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 100px;
+}
+/*
+
+
+
+*/
+.more_room {
+    background-color: var(--white);
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    gap: 30px;
+    overflow: auto;
+    max-width: 100%;
+    padding: 50px;
+}
+.room_card {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+}
+.moreroom_information p, .moreroom_information ul{
+    text-align: start;
+    font-size: 14px;
+}
+.image > img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}

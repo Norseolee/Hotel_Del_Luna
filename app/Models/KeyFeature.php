@@ -5,21 +5,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class RoomGallary extends Model
+class KeyFeature extends Model
 {
-    protected $table = 'room_gallaries';
-    protected $primaryKey = 'room_gallary_id';
-    public $timestamps = false;
+    use HasFactory;
+
+    protected $table = 'key_features';
+    protected $primaryKey = 'key_feature_id';
 
     protected $fillable = [
         'room_type_id',
-        'view',
-        'room_picture',
+        'key_feature_picture',
+        'key_feature_description',
     ];
 
-    // Define the relationship to room_type
     public function roomType()
     {
         return $this->belongsTo(RoomType::class, 'room_type_id');
     }
+
 }
