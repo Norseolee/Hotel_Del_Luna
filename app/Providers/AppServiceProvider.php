@@ -24,14 +24,5 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer('*', function ($view) {
-            $view->with('authUser', Auth::user());
-        });
-
-        // for Footer
-        view()->share('resto_footer', Restaurant::paginate(5));
-        view()->share('room_footer', RoomType::paginate(5));
-
-        Schema::defaultStringLength(191);
     }
 }

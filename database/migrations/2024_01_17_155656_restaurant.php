@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('restaurants', function (Blueprint $table) {
-            $table->id('restaurant_id'); 
+            $table->id('restaurant_id');
             $table->string('restaurant_name');
             $table->string('time_open')->nullable();
             $table->string('time_close')->nullable();
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        
+        Schema::dropIfExists('restaurants');
     }
 };

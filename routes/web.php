@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homepage;
-
+use Illuminate\Support\Facades\Artisan;
 
 Route::get('/', [Homepage::class, 'Home'])->name('Home');
 Route::get('/About', [Homepage::class, 'About']);
@@ -35,3 +35,8 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/account/deletion', [Homepage::class, 'DeletionAccount'])->name('account.deletion');
 });
 
+Route::get('/run-migration', function () {
+    Artisan::call('optimize:clear');
+    Artisan::call('migrate:refresh --seed');
+    return "Migrations executed successfully";
+});

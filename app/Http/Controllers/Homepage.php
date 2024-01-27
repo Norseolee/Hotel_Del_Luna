@@ -21,6 +21,8 @@ class Homepage extends Controller
     public function __construct()
     {
         view()->share('authUser', Auth::user());
+        view()->share('resto_footer', Restaurant::paginate(5));
+        view()->share('room_footer', RoomType::paginate(5));
     }
 
     public function SignIn_SignUp()
