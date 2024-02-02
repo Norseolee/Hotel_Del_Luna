@@ -94,16 +94,15 @@ class Homepage extends Controller
     }
     public function Account()
     {
-      if(Auth::check()){
-        $authUser = Auth::user();
-        $guest = Guest::where('guest_id', $authUser->guest_id)->first();
-        $guestInfo = GuestInformation::where('guest_id', $guest->guest_id)->first();
-        return view('HTML.Account', [
-            'authUser' => $authUser,
-            'guestInfo' => $guestInfo,
-        ]);
-      }
-
+        if (Auth::check()) {
+            $authUser = Auth::user();
+            $guest = Guest::where('guest_id', $authUser->guest_id)->first();
+            $guestInfo = GuestInformation::where('guest_id', $guest->guest_id)->first();
+            return view('HTML.Account', [
+                'authUser' => $authUser,
+                'guestInfo' => $guestInfo,
+            ]);
+        }
     }
 
 
@@ -142,43 +141,43 @@ class Homepage extends Controller
 
             return redirect()->back()->with('success', 'Image uploaded successfully.');
         }
-        if($request->has('acc_fname')){
+        if ($request->has('acc_fname')) {
             $guest->first_name = $request->input('acc_fname');
             $guest->save();
         }
-        if($request->has('acc_lname')){
+        if ($request->has('acc_lname')) {
             $guest->last_name = $request->input('acc_lname');
             $guest->save();
         }
-        if($request->has('as_mobile')){
+        if ($request->has('as_mobile')) {
             $guestInfo->phone_number = $request->input('as_mobile');
             $guestInfo->save();
         }
-        if($request->has('address1')){
+        if ($request->has('address1')) {
             $guestInfo->address1 = $request->input('address1');
             $guestInfo->save();
         }
-        if($request->has('address2')){
+        if ($request->has('address2')) {
             $guestInfo->address2 = $request->input('address2');
             $guestInfo->save();
         }
-        if($request->has('state')){
+        if ($request->has('state')) {
             $guestInfo->state = $request->input('state');
             $guestInfo->save();
         }
-        if($request->has('postal_code')){
+        if ($request->has('postal_code')) {
             $guestInfo->postal_code = $request->input('postal_code');
             $guestInfo->save();
         }
-        if($request->has('country')){
+        if ($request->has('country')) {
             $guestInfo->country = $request->input('country');
             $guestInfo->save();
         }
-        if($request->has('gender')){
+        if ($request->has('gender')) {
             $guestInfo->gender = $request->input('gender');
             $guestInfo->save();
         }
-        if($request->has('date_of_birth')){
+        if ($request->has('date_of_birth')) {
             $guestInfo->date_of_birth = $request->input('date_of_birth');
             $guestInfo->save();
         }
@@ -186,7 +185,8 @@ class Homepage extends Controller
         return redirect()->back()->with('error', 'No image uploaded.');
     }
 
-    public function DeletionAccount(Request $request){
+    public function DeletionAccount(Request $request)
+    {
         $request->validate([
             'terms' => 'required|accepted',
         ]);
@@ -221,7 +221,8 @@ class Homepage extends Controller
 
         return view('HTML.Resto', compact('restaurant', 'restaurant_gallery'));
     }
-    public function ShowRoom($room_type_id) {
+    public function ShowRoom($room_type_id)
+    {
         $allroom = RoomType::all();
         $allroom_gallery = RoomGallary::all();
         $all_amenity = Amenity::all();
@@ -276,7 +277,7 @@ class Homepage extends Controller
 
         ]);
 
-        // return view('HTML.Rooms');
+        return view('HTML.Rooms');
     }
     public function Shooting()
     {
@@ -298,7 +299,8 @@ class Homepage extends Controller
     {
         return view('HTML.Wellness');
     }
-    public function ContactUs() {
+    public function ContactUs()
+    {
         return view('HTML.ContactUs');
     }
 }
