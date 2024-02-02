@@ -22,6 +22,5 @@
     </div>
     <div>
         <a href="/Rooms/{{ $room->room_type_id }}"><button class='Btn'>View Details</button></a>
-
     </div>
 </div>
