@@ -28,9 +28,10 @@
 
     <div class='room p-5'>
         @foreach($room_type as $room)
-        <x-All_Rooms :Room='$room' />
+        <x-All_Rooms :room="$room" />
         @endforeach
     </div>
+
 
 
     <!-- Gallery -->
